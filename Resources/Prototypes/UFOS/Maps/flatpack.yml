@@ -1,0 +1,47 @@
+- type: gameMap
+  id: UfosFlatpack
+  mapName: 'Flatpack station'
+  mapPath: /Maps/UFOS/ufos_flatpack.yml
+  minPlayers: 0
+  maxPlayers: 30
+  stations:
+    UfosFlatpack:
+      stationProto: StandardNanotrasenStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: '{0} Flatpack station {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: 'AB'
+        - type: StationEmergencyShuttle
+          emergencyShuttlePath: /Maps/Shuttles/emergency_corvaxsilly.yml
+        - type: StationJobs
+          overflowJobs:
+            - Passenger
+          availableJobs:
+            #service
+            Captain: [ 1, 1 ]
+            Bartender: [ 1, 1 ]
+            Chef: [ 1, 1 ]
+            Chaplain: [ 1, 1 ]
+            #engineering
+            ChiefEngineer: [ 1, 1 ]
+            AtmosphericTechnician: [ 1, 1 ]
+            StationEngineer: [ 1, 1 ]
+            #medical
+            ChiefMedicalOfficer: [ 1, 1 ]
+            MedicalDoctor: [ 1, 1]
+            #science
+            ResearchDirector: [ 1, 1 ]
+            Scientist: [ 1, 1 ]
+            #security
+            HeadOfSecurity: [ 1, 1 ]
+            SecurityOfficer: [ 1, 1 ]
+            #supply
+            Quartermaster: [ 1, 1 ]
+            SalvageSpecialist: [ 1, 1 ]
+            #civilian
+            Passenger: [ -1, -1 ]
+            Clown: [ 1, 1 ]
+            Mime: [ 1, 1 ]
+            Musician: [ 1, 1 ]

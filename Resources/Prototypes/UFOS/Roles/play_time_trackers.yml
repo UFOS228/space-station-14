@@ -1,0 +1,25 @@
+#NT
+- type: playTimeTracker
+  id: UfosNTRecruitTracker
+
+- type: playTimeTracker
+  id: UfosNTRepairmanTracker
+
+- type: playTimeTracker
+  id: UfosNTAdmiralTracker
+
+- type: playTimeTracker
+  id: UfosNTParamedicTracker
+
+#Snd
+- type: playTimeTracker
+  id: UfosSNDCommanderTracker
+
+- type: playTimeTracker
+  id: UfosSNDParamedicTracker
+
+- type: playTimeTracker
+  id: UfosSNDRepairmanTracker
+
+- type: playTimeTracker
+  id: UfosSNDRecruitTracker

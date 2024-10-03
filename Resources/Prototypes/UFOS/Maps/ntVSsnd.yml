@@ -1,0 +1,40 @@
+- type: gameMap
+  id: UFOS_NT_vs_SND
+  mapName: 'PVP map'
+  mapPath: /Maps/UFOS/NT_vs_Syndi.yml
+  minPlayers: 0
+  maxPlayers: 30
+  stations:
+    UFOSNTBase:
+      stationProto: StandardStationArena
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: '{0} NT base {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: 'AB'
+        - type: StationJobs
+          overflowJobs:
+            - UfosRecruitNT
+          availableJobs:
+            UfosAdmiralNT: [ 1, 1 ]
+            UfosRepairmanNT: [ 3, 3 ]
+            UfosParamedicNT: [ 3, 3 ]
+            UfosRecruitNT: [ -1, -1 ]
+            Passenger: [1, 1]
+    UFOSSndBase:
+      stationProto: StandardStationArena
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: '{0} Syndie base {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: 'AB'
+        - type: StationJobs
+          overflowJobs:
+            - UfosRecruitSND
+          availableJobs:
+            UfosCommanderSND: [ 1, 1 ]
+            UfosRepairmanSND: [ 3, 3 ]
+            UfosParamedicSND: [ 3, 3 ]
+            UfosRecruitSND: [ -1, -1 ]

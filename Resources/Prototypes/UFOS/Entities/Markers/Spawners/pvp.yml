@@ -1,0 +1,98 @@
+# NT
+- type: entity
+  id: SpawnPointUfosAdmiralNT
+  parent: SpawnPointJobBase
+  name: SpawnPointUfosAdmiralNT
+  components:
+  - type: SpawnPoint
+    job_id: UfosAdmiralNT
+  - type: Sprite
+    layers:
+      - state: green
+      - state: ertsecurity
+
+- type: entity
+  id: SpawnPointUfosRepairmanNT
+  parent: SpawnPointJobBase
+  name: SpawnPointUfosRepairmanNT
+  components:
+  - type: SpawnPoint
+    job_id: UfosRepairmanNT
+  - type: Sprite
+    layers:
+      - state: green
+      - state: ertengineer
+
+- type: entity
+  id: SpawnPointUfosParamedicNT
+  parent: SpawnPointJobBase
+  name: SpawnPointUfosParamedicNT
+  components:
+  - type: SpawnPoint
+    job_id: UfosParamedicNT
+  - type: Sprite
+    layers:
+      - state: green
+      - state: ertmedical
+
+- type: entity
+  id: SpawnPointUfosRecruitNT
+  parent: SpawnPointJobBase
+  name: SpawnPointUfosRecruitNT
+  components:
+  - type: SpawnPoint
+    job_id: UfosRecruitNT
+  - type: Sprite
+    layers:
+      - state: green
+      - state: ertjanitor
+
+
+# Syndie
+- type: entity
+  id: SpawnPointUfosCommanderSND
+  parent: SpawnPointJobBase
+  name: SpawnPointUfosCommanderSND
+  components:
+  - type: SpawnPoint
+    job_id: UfosCommanderSND
+  - type: Sprite
+    layers:
+      - state: green
+      - state: ertsecurity
+
+- type: entity
+  id: SpawnPointUfosRepairmanSND
+  parent: SpawnPointJobBase
+  name: SpawnPointUfosRepairmanSND
+  components:
+  - type: SpawnPoint
+    job_id: UfosRepairmanSND
+  - type: Sprite
+    layers:
+      - state: green
+      - state: ertengineer
+
+- type: entity
+  id: SpawnPointUfosParamedicSND
+  parent: SpawnPointJobBase
+  name: SpawnPointUfosParamedicSND
+  components:
+  - type: SpawnPoint
+    job_id: UfosParamedicSND
+  - type: Sprite
+    layers:
+      - state: green
+      - state: ertmedical
+
+- type: entity
+  id: SpawnPointUfosRecruitSND
+  parent: SpawnPointJobBase
+  name: SpawnPointUfosRecruitSND
+  components:
+  - type: SpawnPoint
+    job_id: UfosRecruitSND
+  - type: Sprite
+    layers:
+      - state: green
+      - state: ertjanitor
