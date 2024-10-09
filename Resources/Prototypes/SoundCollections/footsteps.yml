@@ -10,55 +10,53 @@
 - type: soundCollection
   id: FootstepWood
   files:
-  - /Audio/Effects/Footsteps/wood1.ogg
-  - /Audio/Effects/Footsteps/wood2.ogg
-  - /Audio/Effects/Footsteps/wood3.ogg
-  - /Audio/Effects/Footsteps/wood4.ogg
-  - /Audio/Effects/Footsteps/wood5.ogg
+  - /Audio/Effects/Footsteps/wood_run_1.ogg
+  - /Audio/Effects/Footsteps/wood_run_2.ogg
+  - /Audio/Effects/Footsteps/wood_run_3.ogg
+  - /Audio/Effects/Footsteps/wood_run_4.ogg
 
 - type: soundCollection
   id: FootstepCatwalk
   files:
-  - /Audio/Effects/Footsteps/catwalk1.ogg
-  - /Audio/Effects/Footsteps/catwalk2.ogg
-  - /Audio/Effects/Footsteps/catwalk3.ogg
-  - /Audio/Effects/Footsteps/catwalk4.ogg
-  - /Audio/Effects/Footsteps/catwalk5.ogg
+  - /Audio/Effects/Footsteps/catwalk (1).ogg
+  - /Audio/Effects/Footsteps/catwalk (2).ogg
+  - /Audio/Effects/Footsteps/catwalk (3).ogg
+  - /Audio/Effects/Footsteps/catwalk (4).ogg
+  - /Audio/Effects/Footsteps/catwalk (5).ogg
 
 - type: soundCollection
   id: FootstepFloor
   files:
-  - /Audio/Effects/Footsteps/floor1.ogg
-  - /Audio/Effects/Footsteps/floor2.ogg
-  - /Audio/Effects/Footsteps/floor3.ogg
-  - /Audio/Effects/Footsteps/floor4.ogg
-  - /Audio/Effects/Footsteps/floor5.ogg
+  - /Audio/Effects/Footsteps/floor (1).ogg
+  - /Audio/Effects/Footsteps/floor (2).ogg
+  - /Audio/Effects/Footsteps/floor (3).ogg
+  - /Audio/Effects/Footsteps/floor (4).ogg
+  - /Audio/Effects/Footsteps/floor (5).ogg
 
 - type: soundCollection
   id: FootstepHull
   files:
-  - /Audio/Effects/Footsteps/hull1.ogg
-  - /Audio/Effects/Footsteps/hull2.ogg
-  - /Audio/Effects/Footsteps/hull3.ogg
-  - /Audio/Effects/Footsteps/hull4.ogg
-  - /Audio/Effects/Footsteps/hull5.ogg
+  - /Audio/Effects/Footsteps/hull (1).ogg
+  - /Audio/Effects/Footsteps/hull (2).ogg
+  - /Audio/Effects/Footsteps/hull (3).ogg
+  - /Audio/Effects/Footsteps/hull (4).ogg
+  - /Audio/Effects/Footsteps/hull (5).ogg
 
 - type: soundCollection
   id: FootstepPlating
   files:
-  - /Audio/Effects/Footsteps/plating1.ogg
-  - /Audio/Effects/Footsteps/plating2.ogg
-  - /Audio/Effects/Footsteps/plating3.ogg
-  - /Audio/Effects/Footsteps/plating4.ogg
-  - /Audio/Effects/Footsteps/plating5.ogg
+  - /Audio/Effects/Footsteps/plating (1).ogg
+  - /Audio/Effects/Footsteps/plating (2).ogg
+  - /Audio/Effects/Footsteps/plating (3).ogg
+  - /Audio/Effects/Footsteps/plating (4).ogg
 
 - type: soundCollection
   id: FootstepTile
   files:
-  - /Audio/Effects/Footsteps/tile1.ogg
-  - /Audio/Effects/Footsteps/tile2.ogg
-  - /Audio/Effects/Footsteps/tile3.ogg
-  - /Audio/Effects/Footsteps/tile4.ogg
+  - /Audio/Effects/Footsteps/tile (1).ogg
+  - /Audio/Effects/Footsteps/tile (2).ogg
+  - /Audio/Effects/Footsteps/tile (3).ogg
+  - /Audio/Effects/Footsteps/tile (4).ogg
 
 - type: soundCollection
   id: FootstepClown
@@ -100,35 +98,35 @@
 - type: soundCollection
   id: FootstepSnow
   files:
-  - /Audio/Effects/Footsteps/snowstep1.ogg
-  - /Audio/Effects/Footsteps/snowstep2.ogg
-  - /Audio/Effects/Footsteps/snowstep3.ogg
-  - /Audio/Effects/Footsteps/snowstep4.ogg
+  - /Audio/Effects/Footsteps/snowstep (1).ogg
+  - /Audio/Effects/Footsteps/snowstep (2).ogg
+  - /Audio/Effects/Footsteps/snowstep (3).ogg
+  - /Audio/Effects/Footsteps/snowstep (4).ogg
 
 - type: soundCollection
   id: FootstepGrass
   files:
-  - /Audio/Effects/Footsteps/grass1.ogg
-  - /Audio/Effects/Footsteps/grass2.ogg
-  - /Audio/Effects/Footsteps/grass3.ogg
-  - /Audio/Effects/Footsteps/grass4.ogg
+  - /Audio/Effects/Footsteps/grass (1).ogg
+  - /Audio/Effects/Footsteps/grass (2).ogg
+  - /Audio/Effects/Footsteps/grass (3).ogg
+  - /Audio/Effects/Footsteps/grass (4).ogg
 
 - type: soundCollection
   id: FootstepWater
   files:
-    - /Audio/Effects/Footsteps/water1.ogg
-    - /Audio/Effects/Footsteps/water2.ogg
-    - /Audio/Effects/Footsteps/water3.ogg
-    - /Audio/Effects/Footsteps/water4.ogg
+    - /Audio/Effects/Footsteps/water_walk_1.ogg
+    - /Audio/Effects/Footsteps/water_walk_2.ogg
+    - /Audio/Effects/Footsteps/water_walk_3.ogg
+    - /Audio/Effects/Footsteps/water_walk_4.ogg
 
 - type: soundCollection
   id: BarestepHard
   files:
-  - /Audio/Effects/Footsteps/hardbarefoot1.ogg
-  - /Audio/Effects/Footsteps/hardbarefoot2.ogg
-  - /Audio/Effects/Footsteps/hardbarefoot3.ogg
-  - /Audio/Effects/Footsteps/hardbarefoot4.ogg
-  - /Audio/Effects/Footsteps/hardbarefoot5.ogg
+  - /Audio/Effects/Footsteps/hardbarefoot (1).ogg
+  - /Audio/Effects/Footsteps/hardbarefoot (2).ogg
+  - /Audio/Effects/Footsteps/hardbarefoot (3).ogg
+  - /Audio/Effects/Footsteps/hardbarefoot (4).ogg
+  - /Audio/Effects/Footsteps/hardbarefoot (5).ogg
 
 - type: soundCollection
   id: BarestepCarpet
@@ -142,11 +140,11 @@
 - type: soundCollection
   id: BarestepWood
   files:
-  - /Audio/Effects/Footsteps/woodbarefoot1.ogg
-  - /Audio/Effects/Footsteps/woodbarefoot2.ogg
-  - /Audio/Effects/Footsteps/woodbarefoot3.ogg
-  - /Audio/Effects/Footsteps/woodbarefoot4.ogg
-  - /Audio/Effects/Footsteps/woodbarefoot5.ogg
+  - /Audio/Effects/Footsteps/wood_crouch_1.ogg
+  - /Audio/Effects/Footsteps/wood_crouch_2.ogg
+  - /Audio/Effects/Footsteps/wood_crouch_3.ogg
+  - /Audio/Effects/Footsteps/wood_crouch_4.ogg
+  - /Audio/Effects/Footsteps/wood_crouch_5.ogg
 
 - type: soundCollection
   id: FootstepBounce
@@ -198,9 +196,9 @@
 - type: soundCollection
   id: FootstepSpurs
   files:
-  - /Audio/Effects/Footsteps/spurs1.ogg
-  - /Audio/Effects/Footsteps/spurs2.ogg
-  - /Audio/Effects/Footsteps/spurs3.ogg
+  - /Audio/Effects/Footsteps/spurs (1).ogg
+  - /Audio/Effects/Footsteps/spurs (2).ogg
+  - /Audio/Effects/Footsteps/spurs (3).ogg
 
 - type: soundCollection
   id: FootstepBorg
