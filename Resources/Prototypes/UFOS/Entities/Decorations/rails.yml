@@ -7,27 +7,16 @@
     mode: SnapgridCenter
   components:
   - type: Sprite
-    sprite: UFOS/Decortaions/rails.rsi
+    sprite: UFOS/Decorations/rails.rsi
     drawdepth: FloorTiles
-  - type: Icon
-    sprite: UFOS/Decortaions/rails.rsi
     state: rails1
   - type: Transform
     anchored: true
-  - type: IconSmooth
-    key: catwalk
-    base: catwalk_
   - type: FootstepModifier
     footstepSoundCollection:
       collection: FootstepCatwalk
       params:
         volume: 8
-  - type: Tag
-    tags:
-      - Catwalk
-  - type: Construction
-    graph: Catwalk
-    node: Catwalk
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: Metallic
@@ -50,7 +39,3 @@
             max: 1
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
-  - type: RCDDeconstructable
-    cost: 2
-    delay: 2
-    fx: EffectRCDDeconstruct2
