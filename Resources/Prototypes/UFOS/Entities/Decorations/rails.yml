@@ -9,7 +9,7 @@
   - type: Sprite
     sprite: UFOS/Decorations/rails.rsi
     drawdepth: FloorTiles
-    state: rails
+    state: rails1
   - type: Transform
     anchored: true
   - type: FootstepModifier
