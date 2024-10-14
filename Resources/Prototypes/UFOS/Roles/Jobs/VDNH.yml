@@ -1,7 +1,7 @@
 - type: job
   id: VdnhCiv
   name: job-name-vdnh-civ
-  description: job-description-vdnh-civ
+  description: job-description-station-civ
   playTimeTracker: Overall
   startingGear: VdnhCivGear
   icon: "JobIconPassenger"

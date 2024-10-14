@@ -1,7 +1,7 @@
 - type: department
   id: Civ
-  name: department-Civilian
-  description: department-Civilian-description
+  name: department-Civ
+  description: department-Civ-description
   color: "#9FED58"
   weight: -10
   roles:

@@ -9,10 +9,10 @@
   - type: StationAiWhitelist
   - type: AmbientOnPowered
   - type: AmbientSound
-    volume: -9
-    range: 2
+    volume: -10
+    range: 3
     sound:
-      path: /Audio/Ambience/Objects/hdd_buzz.ogg
+      path: /Audio/UFOS/Effects/d6_transformer4_2.ogg
   - type: PointLight
     radius: 1.5
     energy: 1.6
@@ -21,13 +21,12 @@
     netsync: false
   - type: Clickable
   - type: AccessReader
-    access: [["Engineering"]]
   - type: InteractionOutline
   - type: Transform
     anchored: true
   - type: Sprite
     drawdepth: WallMountedItems
-    sprite: Structures/Power/apc.rsi
+    sprite: UFOS/Structures/Power/apc.rsi
     layers:
     - state: base
     - state: panel
@@ -76,7 +75,7 @@
     sourceNode: input
     loadNode: output
     collectionName: apc
-    sprite: Structures/Power/apc.rsi
+    sprite: UFOS/Structures/Power/apc.rsi
     state: static
   - type: BatteryCharger
     voltage: Medium
@@ -160,7 +159,7 @@
     anchored: true
   - type: Sprite
     drawdepth: WallMountedItems
-    sprite: Structures/Power/apc.rsi
+    sprite: UFOS/Structures/Power/apc.rsi
     state: frame
   - type: Construction
     graph: APC
