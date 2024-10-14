@@ -1,0 +1,8 @@
+- type: department
+  id: Civ
+  name: department-Civilian
+  description: department-Civilian-description
+  color: "#9FED58"
+  weight: -10
+  roles:
+  - VdnhCiv

@@ -1,0 +1,32 @@
+- type: job
+  id: VdnhCiv
+  name: job-name-vdnh-civ
+  description: job-description-vdnh-civ
+  playTimeTracker: JobPassenger
+  startingGear: VdnhCivGear
+  icon: "JobIconPassenger"
+  supervisors: job-supervisors-everyone
+#  access: # Corvax-MRP
+#  - Maintenance
+
+- type: startingGear
+  id: VdnhCivGear
+  equipment:
+    id: PassengerPDA
+    ears: ClothingHeadsetGrey
+  #storage:
+    #back:
+    #- Stuff
+
+
+- type: entity
+  id: SpawnPointVdnhCiv
+  parent: SpawnPointJobBase
+  name: Vdnh civ spawner
+  components:
+  - type: SpawnPoint
+    job_id: VdnhCiv
+  - type: Sprite
+    layers:
+      - state: green
+      - state: passenger

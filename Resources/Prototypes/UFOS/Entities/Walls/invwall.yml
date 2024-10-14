@@ -29,3 +29,9 @@
         density: 1000
   - type: Airtight
   - type: BlockWeather
+  - type: Sprite
+    drawdepth: Overdoors
+    sprite: Markers/cross.rsi
+    layers:
+      - state: red
+  - type: Marker

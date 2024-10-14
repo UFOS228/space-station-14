@@ -20,6 +20,7 @@
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: Metallic
+  - type: Clickable
   - type: Destructible
     thresholds:
     - trigger:
