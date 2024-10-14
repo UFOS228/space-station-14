@@ -14,9 +14,9 @@
   equipment:
     id: PassengerPDA
     #ears: ClothingHeadsetGrey
-    feet: ClothingShoesColorBlack
-    innerclothing: ClothingUniformJumpsuitMercenary
-    outerclothing: ClothingOuterCoatBomber
+    shoes: ClothingShoesColorBlack
+    jumpsuit: ClothingUniformJumpsuitMercenary
+    outerClothing: ClothingOuterCoatBomber
   #storage:
     #back:
     #- Stuff
