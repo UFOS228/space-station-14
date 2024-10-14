@@ -2,7 +2,7 @@
   id: VdnhCiv
   name: job-name-vdnh-civ
   description: job-description-vdnh-civ
-  playTimeTracker: JobPassenger
+  playTimeTracker: Overall
   startingGear: VdnhCivGear
   icon: "JobIconPassenger"
   supervisors: job-supervisors-everyone
@@ -13,7 +13,10 @@
   id: VdnhCivGear
   equipment:
     id: PassengerPDA
-    ears: ClothingHeadsetGrey
+    #ears: ClothingHeadsetGrey
+    feet: ClothingShoesColorBlack
+    innerclothing: ClothingUniformJumpsuitMercenary
+    outerclothing: ClothingOuterCoatBomber
   #storage:
     #back:
     #- Stuff
