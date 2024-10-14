@@ -1,0 +1,14 @@
+- type: entity
+  parent: PassengerPDA
+  id: MetroPDA
+  name: PDA
+  description: Personal Data Assistant.
+  components:
+  - type: PointLight
+    enabled: false
+    radius: 1.5
+    softness: 2
+    autoRot: true
+    maskPath: /Textures/Effects/LightMasks/cone.png
+    color: "#FED38A"
+    energy: 0.4

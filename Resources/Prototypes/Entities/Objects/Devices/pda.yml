@@ -60,8 +60,11 @@
   - type: PointLight
     enabled: false
     radius: 1.5
-    softness: 5
+    softness: 2
     autoRot: true
+    maskPath: /Textures/Effects/LightMasks/cone.png
+    color: "#FED38A"
+    energy: 0.4
   - type: Ringer
   - type: DeviceNetwork
     deviceNetId: Wireless

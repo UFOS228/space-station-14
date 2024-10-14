@@ -1,0 +1,51 @@
+- type: entity
+  name: small-flashlight
+  parent: FlashlightLantern
+  id: SmallFlashlight
+  description: It lights the way to freedom.
+  components:
+  - type: LightBehaviour
+    behaviours:
+      - !type:FadeBehaviour
+        id: radiating
+        maxDuration: 2.0
+        startValue: 3.0
+        endValue: 2.0
+        isLooped: true
+        reverseWhenFinished: true
+      - !type:PulseBehaviour
+        id: blinking
+        interpolate: Nearest
+        maxDuration: 1.0
+        minValue: 0.7
+        maxValue: 2.0
+        isLooped: true
+  - type: Sprite
+    sprite: UFOS/Objects/smallflashlight.rsi
+    layers:
+      - state: flashlight
+      - state: flashlight-overlay
+        shader: unshaded
+        visible: false
+        map: [ "light" ]
+  - type: Item
+    sprite: UFOS/Objects/smallflashlight.rsi
+    storedRotation: -90
+  - type: PointLight
+    enabled: false
+    mask: /Textures/Effects/LightMasks/cone.png
+    autoRot: true
+    radius: 4.7
+    netsync: false
+  - type: Clothing
+    sprite: UFOS/Objects/smallflashlight.rsi
+    quickEquip: false
+    slots:
+      - Belt
+      - Pocket 1
+      - Pocket 2
+  - type: HandheldLight
+    turnOnSound:
+      path: /Audio/UFOS/Effects/lamp_electric_2_on.ogg
+    turnOffSound:
+      path: /Audio/UFOS/Effects/lamp_electric_2_off.ogg
