@@ -42,8 +42,6 @@
     quickEquip: false
     slots:
       - Belt
-      - Pocket 1
-      - Pocket 2
   - type: HandheldLight
     turnOnSound:
       path: /Audio/UFOS/Effects/lamp_electric_2_on.ogg

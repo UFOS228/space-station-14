@@ -12,7 +12,7 @@
 - type: startingGear
   id: VdnhCivGear
   equipment:
-    id: PassengerPDA
+    id: MetroPDA
     #ears: ClothingHeadsetGrey
     shoes: ClothingShoesColorBlack
     jumpsuit: ClothingUniformJumpsuitMercenary
