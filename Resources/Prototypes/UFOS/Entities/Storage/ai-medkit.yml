@@ -1,0 +1,52 @@
+- type: entity
+  id: AiMedkit
+  parent: [ BaseStorageItem, BaseBagOpenClose ]
+  name: Ai-2 medkit
+  description: A case for holding your syringes with medicine.
+  components:
+  - type: Sprite
+    sprite: UFOS/Objects/Storage/ai.rsi
+    layers:
+    - state: closed
+      map: ["closeLayer"]
+    - state: open
+      map: ["openLayer"]
+    - state: syr1
+      map: ["syr1"]
+      visible: false
+    - state: syr2
+      map: ["syr2"]
+      visible: false
+    - state: syr3
+      map: ["syr3"]
+      visible: false
+    - state: syr4
+      map: ["syr4"]
+      visible: false
+  - type: Storage
+    grid:
+    - 0,0,1,1
+  - type: Item
+    sprite: UFOS/Objects/Storage/ai.rsi
+    size: Normal
+    shape:
+    - 0,0,0,1
+    storedRotation: 90
+  - type: StorageFill
+    contents:
+    - id: EmergencyMedipen
+      amount: 4
+  - type: ItemCounter
+    count:
+      tags: [Medipen]
+    composite: true
+    layerStates:
+    - syr1
+    - syr2
+    - syr3
+    - syr4
+    - syr5
+    - syr6
+    - syr7
+    - syr8
+  - type: Appearance

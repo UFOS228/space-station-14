@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "closed"
+    },
+    {
+      "name": "open"
+    },
+    {
+      "name": "syr1"
+    },
+    {
+      "name": "syr2"
+    },
+    {
+      "name": "syr3"
+    },
+    {
+      "name": "syr4"
+    }
+  ]
+}

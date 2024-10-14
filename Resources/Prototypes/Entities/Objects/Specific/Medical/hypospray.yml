@@ -158,7 +158,7 @@
         - ReagentId: TranexamicAcid
           Quantity: 3
   - type: Tag
-    tags: []
+    tags: ["Medipen"]
 
 - type: entity
   name: poison auto-injector

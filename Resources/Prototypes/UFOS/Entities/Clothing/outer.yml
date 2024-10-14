@@ -1,0 +1,10 @@
+- type: entity
+  parent: [ClothingOuterStorageBase, AllowSuitStorageClothing, ClothingOuterArmorBasic]
+  id: ClothingOuterCoatBomberArmored
+  name: bomber jacket armored
+  description: A thick, well-worn WW2 leather bomber jacket.
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Coats/bomber.rsi
+  - type: Clothing
+    sprite: Clothing/OuterClothing/Coats/bomber.rsi

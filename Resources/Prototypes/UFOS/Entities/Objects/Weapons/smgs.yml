@@ -4,6 +4,8 @@
   id: WeaponSubMachineGunBastard
   description: Uses .35 auto ammo.
   components:
+  - type: Clothing
+    sprite: UFOS/Objects/Weapons/bastard.rsi
   - type: Sprite
     sprite: UFOS/Objects/Weapons/bastard.rsi
     layers:
@@ -12,19 +14,19 @@
     - state: mag-3
       map: ["enum.GunVisualLayers.Mag"]
   - type: Gun
-    minAngle: 2
-    maxAngle: 18
+    minAngle: -60
+    maxAngle: 60
     fireRate: 8
-    angleIncrease: 3
+    angleIncrease: 8
     angleDecay: 16
     soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/atreides.ogg
+      path: /Audio/UFOS/Weapon/ublyudok_shot_close_1.ogg
   - type: MagazineVisuals
     magState: mag
     steps: 4
     zeroVisible: true
   - type: Appearance
   - type: GunWieldBonus
-    minAngle: -43
-    maxAngle: -43
+    minAngle: 35
+    maxAngle: -15
   - type: Wieldable
