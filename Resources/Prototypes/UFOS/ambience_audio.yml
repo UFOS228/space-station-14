@@ -51,32 +51,31 @@
 - type: soundCollection
   id: AmbienceRails
   files:
-    - /Audio/Ambience/ambimaint1.ogg
-    - /Audio/Ambience/ambimaint2.ogg
-    - /Audio/Ambience/ambimaint3.ogg
-    - /Audio/Ambience/ambimaint4.ogg
-    - /Audio/Ambience/ambimaint5.ogg
-    - /Audio/Ambience/ambitech2.ogg
-    - /Audio/Voice/Misc/lowHiss1.ogg
-    - /Audio/Voice/Misc/lowHiss2.ogg
-    - /Audio/Voice/Misc/lowHiss3.ogg
-    - /Audio/Voice/Misc/lowHiss4.ogg
-    - /Audio/Ambience/maintambience.ogg
+    - /Audio/UFOS/Ambience/Rails/tun_bkg_1.ogg
+    - /Audio/UFOS/Ambience/Rails/tun_bkg_1b.ogg
+    - /Audio/UFOS/Ambience/Rails/tun_bkg_2.ogg
+    - /Audio/UFOS/Ambience/Rails/tun_bkg_wind_1.ogg
+    - /Audio/UFOS/Ambience/Rails/tun_bkg_wind_2.ogg
+    - /Audio/UFOS/Ambience/Rails/tun_bkg_wind_3.ogg
+    - /Audio/UFOS/Ambience/Rails/tun_bkg_wind_4.ogg
+    - /Audio/UFOS/Ambience/Rails/tun_bkg_wind_5.ogg
+    - /Audio/UFOS/Ambience/Rails/tunnel_0.ogg
+    - /Audio/UFOS/Ambience/Rails/tunnel_1.ogg
+    - /Audio/UFOS/Ambience/Rails/tunnels_bkg_1.ogg
+    - /Audio/UFOS/Ambience/Rails/tunnels_bkg_2.ogg
+    - /Audio/UFOS/Ambience/Rails/tunnels_bkg_3.ogg
+    - /Audio/UFOS/Ambience/Rails/Effects/tun_moan_1.ogg
+    - /Audio/UFOS/Ambience/Rails/Effects/tun_moan_2.ogg
+    - /Audio/UFOS/Ambience/Rails/Effects/tun_moan_3.ogg
+    - /Audio/UFOS/Ambience/Rails/Effects/tun_moan_4.ogg
+
 
 - type: soundCollection
   id: AmbienceStationCrowd
   files:
-    - /Audio/Ambience/ambimaint1.ogg
-    - /Audio/Ambience/ambimaint2.ogg
-    - /Audio/Ambience/ambimaint3.ogg
-    - /Audio/Ambience/ambimaint4.ogg
-    - /Audio/Ambience/ambimaint5.ogg
-    - /Audio/Ambience/ambitech2.ogg
-    - /Audio/Voice/Misc/lowHiss1.ogg
-    - /Audio/Voice/Misc/lowHiss2.ogg
-    - /Audio/Voice/Misc/lowHiss3.ogg
-    - /Audio/Voice/Misc/lowHiss4.ogg
-    - /Audio/Ambience/maintambience.ogg
+    - /Audio/UFOS/Ambience/Station/bar_bkg_1.ogg
+    - /Audio/UFOS/Ambience/Station/crowd_idle.ogg
+    - /Audio/UFOS/Ambience/Station/sta_bkg_day_1.ogg
 
 
 - type: rules
