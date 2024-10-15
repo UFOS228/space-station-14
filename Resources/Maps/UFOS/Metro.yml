@@ -635,6 +635,28 @@ entities:
       parent: 3351
     - type: Physics
       canCollide: False
+- proto: AiMedkit
+  entities:
+  - uid: 2002
+    components:
+    - type: Transform
+      pos: 15.4629,-25.257652
+      parent: 2
+  - uid: 2003
+    components:
+    - type: Transform
+      pos: 15.551446,-25.346148
+      parent: 2
+  - uid: 2004
+    components:
+    - type: Transform
+      pos: 15.625234,-25.478891
+      parent: 2
+  - uid: 2005
+    components:
+    - type: Transform
+      pos: 15.728537,-25.611635
+      parent: 2
 - proto: AlwaysPoweredlightRed
   entities:
   - uid: 1553
@@ -7334,6 +7356,26 @@ entities:
     - type: Transform
       pos: -11.609286,10.541748
       parent: 2
+  - uid: 3477
+    components:
+    - type: Transform
+      pos: 15.699021,-27.263552
+      parent: 2
+  - uid: 3478
+    components:
+    - type: Transform
+      pos: 15.684263,-27.573286
+      parent: 2
+  - uid: 3479
+    components:
+    - type: Transform
+      pos: 15.699021,-27.425795
+      parent: 2
+  - uid: 3480
+    components:
+    - type: Transform
+      pos: 15.669507,-27.750278
+      parent: 2
 - proto: ClothingBeltUtility
   entities:
   - uid: 1838
@@ -8244,28 +8286,6 @@ entities:
     components:
     - type: Transform
       pos: 10.941383,15.770578
-      parent: 2
-- proto: EmergencyOxygenTankFilled
-  entities:
-  - uid: 2002
-    components:
-    - type: Transform
-      pos: 15.367414,-25.224995
-      parent: 2
-  - uid: 2003
-    components:
-    - type: Transform
-      pos: 15.478525,-25.377773
-      parent: 2
-  - uid: 2004
-    components:
-    - type: Transform
-      pos: 15.6313,-25.502773
-      parent: 2
-  - uid: 2005
-    components:
-    - type: Transform
-      pos: 15.728525,-25.64166
       parent: 2
 - proto: EmergencyRollerBed
   entities:
@@ -10062,16 +10082,52 @@ entities:
     - type: Transform
       pos: 17.39839,-27.445223
       parent: 2
+    - type: Storage
+      storedItems:
+        2011:
+          position: 0,0
+          _rotation: South
+    - type: ContainerContainer
+      containers:
+        storagebase: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 2011
   - uid: 2013
     components:
     - type: Transform
       pos: 17.731722,-27.403557
       parent: 2
+    - type: Storage
+      storedItems:
+        2009:
+          position: 0,0
+          _rotation: South
+    - type: ContainerContainer
+      containers:
+        storagebase: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 2009
   - uid: 2014
     components:
     - type: Transform
       pos: 17.551168,-27.723001
       parent: 2
+    - type: Storage
+      storedItems:
+        2010:
+          position: 0,0
+          _rotation: South
+    - type: ContainerContainer
+      containers:
+        storagebase: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 2010
 - proto: MetalDoor
   entities:
   - uid: 215
@@ -10350,28 +10406,31 @@ entities:
   - uid: 2007
     components:
     - type: Transform
-      pos: 15.561705,-27.298895
+      pos: 15.359597,-27.411045
       parent: 2
   - uid: 2008
     components:
     - type: Transform
-      pos: 15.783926,-27.271118
+      pos: 15.344841,-27.558538
       parent: 2
   - uid: 2009
     components:
     - type: Transform
-      pos: 15.422815,-27.479452
-      parent: 2
+      parent: 2013
+    - type: Physics
+      canCollide: False
   - uid: 2010
     components:
     - type: Transform
-      pos: 15.603373,-27.507229
-      parent: 2
+      parent: 2014
+    - type: Physics
+      canCollide: False
   - uid: 2011
     components:
     - type: Transform
-      pos: 15.756151,-27.49334
-      parent: 2
+      parent: 2012
+    - type: Physics
+      canCollide: False
 - proto: PortableGeneratorSuperPacman
   entities:
   - uid: 955
