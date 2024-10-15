@@ -1,0 +1,58 @@
+- type: entity
+  name: Kalash
+  prefix: "[АК]"
+  parent: [BaseWeaponRifle, BaseWeaponClothing]
+  id: WeaponRifleAkMetro
+  description: An iconic weapon of war. Uses .30 rifle ammo.
+  components:
+  - type: Sprite
+    sprite: UFOS/Objects/Weapons/ak.rsi
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: UFOS/Objects/Weapons/ak.rsi
+  - type: Gun
+    fireRate: 7
+    minAngle: 21
+    maxAngle: 33
+    angleIncrease: 10
+    soundGunshot:
+      path: /Audio/UFOS/Weapon/ak_standart_2.ogg
+  - type: GunWieldBonus
+    minAngle: -20
+    maxAngle: -30
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/Weapons/Guns/Cock/ltrifle_cock.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineLightRifle
+        insertSound: /Audio/UFOS/Weapon/ak74_load.ogg
+        ejectSound: /Audio/UFOS/Weapon/ak74_unload.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineLightRifle
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: CartridgeLightRifle
+        priority: 1
+        whitelist:
+          tags:
+            - CartridgeLightRifle
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+    

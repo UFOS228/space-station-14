@@ -114,7 +114,7 @@
     clothingPrototype: ClothingHeadHatHoodChaplainHood
 
 - type: entity
-  parent: ClothingOuterStorageBase
+  parent: [ClothingOuterStorageBase, AllowSuitStorageClothing]
   id: ClothingOuterCoatTrench
   name: trench coat
   description: A comfy trench coat.

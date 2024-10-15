@@ -1,6 +1,6 @@
 - type: entity
   name: Bastard
-  parent: BaseWeaponSubMachineGun
+  parent: [BaseWeaponSubMachineGun, BaseWeaponClothing]
   id: WeaponSubMachineGunBastard
   description: Uses .35 auto ammo.
   components:

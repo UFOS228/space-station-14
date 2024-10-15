@@ -1,0 +1,30 @@
+- type: entity
+  name: Bandit
+  parent: BaseMobHuman
+  id: MobMetroBandit
+  description: Bad boy
+  components:
+  - type: NpcFactionMember
+    factions:
+      - Bandits
+  - type: Loadout
+    prototypes:
+      - BasicMetroBanditGear
+  - type: InputMover
+  - type: MobMover
+  - type: HTN
+    rootTask:
+      task: SimpleHumanoidHostileCompound
+
+- type: startingGear
+  id: BasicMetroBanditGear
+  equipment:
+    id: MetroPDA
+    #ears: ClothingHeadsetGrey
+    shoes: ClothingShoesBootsCombatFilled
+    jumpsuit: ClothingUniformJumpsuitColorBrown
+    outerClothing: ClothingOuterCoatTrench
+    back: ClothingBackpackSatchelLeather
+  storage:
+    back:
+    - AiMedkit

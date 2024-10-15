@@ -1,0 +1,18 @@
+
+- type: entity
+  id: BaseWeaponClothing
+  parent: BaseWeaponClothingOnlySounds
+  components:
+  - type: Clothing
+    unequipDelay: 0.4
+    equipDelay: 0.2
+
+
+- type: entity
+  id: BaseWeaponClothingOnlySounds
+  components:
+  - type: Clothing
+    unequipSound:
+      path: /Audio/UFOS/Dress/mvt_slow_2.ogg
+    equipSound:
+      path: /Audio/UFOS/Dress/mvt_short_2.ogg

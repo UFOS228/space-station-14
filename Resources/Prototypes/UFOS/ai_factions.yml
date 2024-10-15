@@ -1,0 +1,79 @@
+- type: npcFaction
+  id: Stalkers
+  hostile:
+    - Syndicate
+    - Xeno
+    - Zombie
+    - Revolutionary
+    - Bandits
+    - SimpleHostile
+    - MetroMobs
+- type: npcFaction
+  id: Red
+  hostile:
+    - Syndicate
+    - Xeno
+    - Zombie
+    - Revolutionary
+    - Bandits
+    - Nazi
+    - SimpleHostile
+    - MetroMobs
+- type: npcFaction
+  id: Nazi
+  hostile:
+    - Syndicate
+    - Xeno
+    - Zombie
+    - Revolutionary
+    - Bandits
+    - Red
+    - SimpleHostile
+    - MetroMobs
+    
+- type: npcFaction
+  id: Polis
+  hostile:
+    - Syndicate
+    - Xeno
+    - Zombie
+    - Revolutionary
+    - Bandits
+    - Nazi
+    - SimpleHostile
+    - MetroMobs
+
+- type: npcFaction
+  id: Hanza
+  hostile:
+    - Syndicate
+    - Xeno
+    - Zombie
+    - Revolutionary
+    - Bandits
+    - Nazi
+    - SimpleHostile
+    - MetroMobs
+
+- type: npcFaction
+  id: Bandits
+  hostile:
+    - NanoTrasen
+    - Syndicate
+    - Xeno
+    - PetsNT
+    - Zombie
+    - Revolutionary
+    - Stalkers
+    - SimpleHostile
+    - MetroMobs
+
+- type: npcFaction
+  id: MetroMobs
+  hostile:
+    - NanoTrasen
+    - Syndicate
+    - PetsNT
+    - Zombie
+    - Revolutionary
+    - SimpleHostile

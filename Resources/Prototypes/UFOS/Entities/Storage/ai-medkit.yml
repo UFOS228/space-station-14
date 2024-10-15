@@ -34,7 +34,7 @@
     storedRotation: 90
   - type: StorageFill
     contents:
-    - id: EmergencyMedipen
+    - id: AiMedipen
       amount: 4
   - type: ItemCounter
     count:

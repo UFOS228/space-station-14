@@ -92,9 +92,9 @@
     bumpOpen: false
     clickOpen: true
     closeTimeOne: 0.2
-    closeTimeTwo: 0.6
-    openTimeOne: 0.6
-    openTimeTwo: 0.2
+    closeTimeTwo: 0.3
+    openTimeOne: 0.2
+    openTimeTwo: 0.3
     openSound:
       path: /Audio/Effects/door_open.ogg
     closeSound:
