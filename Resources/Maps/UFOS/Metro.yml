@@ -581,6 +581,11 @@ entities:
         - 0
         - 0
         - 0
+    - type: Gravity
+      gravityShakeSound: !type:SoundPathSpecifier
+        path: /Audio/Effects/alert.ogg
+      inherent: True
+      enabled: True
 - proto: AccordionInstrument
   entities:
   - uid: 2427
