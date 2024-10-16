@@ -1,7 +1,7 @@
 - type: entity
   name: Revolver
   suffix: "Metro Guns"
-  parent: [BaseWeaponRevolver, BaseWeaponClothingOnlySoundsPistols]
+  parent: [BaseWeaponRevolver, BaseWeaponClothingOnlySoundsPistols, SpeedModifierLightGun]
   id: WeaponRevolverMetro
   description: Uses .45 magnum ammo.
   components:

@@ -25,3 +25,49 @@
       path: /Audio/UFOS/Dress/mvt_strong_7.ogg
     equipSound:
       path: /Audio/UFOS/Dress/mvt_short_6.ogg
+
+#WeaponSpeedMods
+
+- type: entity
+  id: BaseWeaponSpeedModifier
+  components:
+  - type: ClothingSpeedModifier
+    walkModifier: 1
+    sprintModifier: 0.9
+  - type: HeldSpeedModifier
+    mirrorClothingModifier: false
+    walkModifier: 1
+    sprintModifier: 0.83
+
+- type: entity
+  id: SpeedModifierBigGun
+  parent: BaseWeaponSpeedModifier
+  components:
+  - type: ClothingSpeedModifier
+    walkModifier: 1
+    sprintModifier: 0.8
+  - type: HeldSpeedModifier
+    walkModifier: 1
+    sprintModifier: 0.75
+
+- type: entity
+  id: SpeedModifierMediumGun
+  parent: BaseWeaponSpeedModifier
+  components:
+  - type: ClothingSpeedModifier
+    walkModifier: 1
+    sprintModifier: 0.88
+  - type: HeldSpeedModifier
+    walkModifier: 1
+    sprintModifier: 0.8
+
+- type: entity
+  id: SpeedModifierLightGun
+  parent: BaseWeaponSpeedModifier
+  components:
+  - type: ClothingSpeedModifier
+    walkModifier: 1
+    sprintModifier: 0.99
+  - type: HeldSpeedModifier
+    walkModifier: 1
+    sprintModifier: 0.9

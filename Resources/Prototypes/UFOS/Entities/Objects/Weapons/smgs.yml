@@ -1,7 +1,7 @@
 - type: entity
   name: Bastard
   suffix: "Metro Guns"
-  parent: [BaseWeaponSubMachineGun, BaseWeaponClothing]
+  parent: [BaseWeaponSubMachineGun, BaseWeaponClothing, SpeedModifierMediumGun]
   id: WeaponSubMachineGunBastard
   description: Uses .35 auto ammo.
   components:
