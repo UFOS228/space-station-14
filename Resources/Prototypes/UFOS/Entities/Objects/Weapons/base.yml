@@ -1,6 +1,7 @@
 
 - type: entity
   id: BaseWeaponClothing
+  abstract: true
   parent: BaseWeaponClothingOnlySounds
   components:
   - type: Clothing
@@ -10,6 +11,7 @@
 
 - type: entity
   id: BaseWeaponClothingOnlySounds
+  abstract: true
   components:
   - type: Clothing
     unequipSound:
@@ -19,6 +21,7 @@
 
 - type: entity
   id: BaseWeaponClothingOnlySoundsPistols
+  abstract: true
   components:
   - type: Clothing
     unequipSound:
@@ -30,6 +33,7 @@
 
 - type: entity
   id: BaseWeaponSpeedModifier
+  abstract: true
   components:
   - type: ClothingSpeedModifier
     walkModifier: 1
@@ -41,6 +45,7 @@
 
 - type: entity
   id: SpeedModifierBigGun
+  abstract: true
   parent: BaseWeaponSpeedModifier
   components:
   - type: ClothingSpeedModifier
@@ -52,6 +57,7 @@
 
 - type: entity
   id: SpeedModifierMediumGun
+  abstract: true
   parent: BaseWeaponSpeedModifier
   components:
   - type: ClothingSpeedModifier
@@ -63,6 +69,7 @@
 
 - type: entity
   id: SpeedModifierLightGun
+  abstract: true
   parent: BaseWeaponSpeedModifier
   components:
   - type: ClothingSpeedModifier

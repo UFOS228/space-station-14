@@ -57,6 +57,9 @@
   components:
   - type: Sprite
     sprite: UFOS/Objects/Weapons/db_shotgun.rsi
+    layers:
+    - state: base-1
+      map: ["enum.GunVisualLayers.Base"]
   - type: Item
     size: Normal
     shape:
@@ -66,17 +69,52 @@
   - type: Gun
     fireRate: 2
     soundGunshot:
-      path: /Audio/UFOS/Weapon/duplet/duplet_shoot_1.ogg
+      collection: DoubleBarrelShoot
   - type: RevolverAmmoProvider
     capacity: 2
     chambers: [ True, True ]
     ammoSlots: [ null, null ]
+  - type: MagazineVisuals
+    magState: base
+    steps: 1
+    zeroVisible: true
   - type: Construction
     graph: DbSawn
     node: start
     deconstructionTarget: null
 
-
+- type: entity
+  name: four-barreled shotgun
+  suffix: "Metro Guns"
+  parent: [BaseWeaponRevShotgun, BaseGunWieldable, BaseWeaponClothing, SpeedModifierBigGun]
+  id: WeaponShotgunFourBarrel
+  description: YEAH! Uses .50 shotgun shells.
+  components:
+  - type: Sprite
+    sprite: UFOS/Objects/Weapons/fb_shotgun.rsi
+    layers:
+    - state: base-1
+      map: [enum.GunVisualLayers.Base]
+  - type: Item
+    size: Large
+    shape:
+    - 0,0,4,1
+    sprite: UFOS/Objects/Weapons/fb_shotgun_inhands_64x.rsi
+  - type: GunRequiresWield
+  - type: Gun
+    fireRate: 2
+    soundGunshot:
+      collection: DoubleBarrelShoot
+  - type: RevolverAmmoProvider
+    capacity: 4
+    chambers: [ True, True, True, True ]
+    ammoSlots: [ null, null, null, null ]
+  - type: MagazineVisuals
+    magState: base
+    steps: 1
+    zeroVisible: true
+  - type: Clothing
+    sprite: UFOS/Objects/Weapons/fb_shotgun.rsi
 
 - type: entity
   name: sawn-off shotgun
@@ -128,3 +166,11 @@
               doAfter: 2
     - node: shotgunsawn
       entity: WeaponShotgunSawnEmpty 
+
+
+
+- type: soundCollection
+  id: DoubleBarrelShoot
+  files:
+    - /Audio/UFOS/Weapon/duplet/duplet_shoot_1.ogg
+    - /Audio/UFOS/Weapon/duplet/duplet_shoot_2.ogg
