@@ -50,7 +50,7 @@
 
 - type: entity
   name: double-barreled shotgun
-  suffix: "[Metro Guns]"
+  suffix: "Metro Guns"
   parent: [BaseWeaponRevShotgun, BaseGunWieldable, BaseWeaponClothing]
   id: WeaponShotgunDoubleBarrel
   description: An immortal classic. Uses .50 shotgun shells.

@@ -2,7 +2,7 @@
   name: Uboinik
   parent: [BaseWeaponShotgun, BaseGunWieldable, BaseWeaponClothing]
   id: WeaponShotgunUboinik
-  suffix: "[Metro Guns]"
+  suffix: "Metro Guns"
   description: Uses .50 shotgun shells.
   components:
   - type: Item
