@@ -21,6 +21,7 @@
     slots:
     - suitStorage
     - Belt
+    - holster
   - type: AmmoCounter
   - type: Gun
     selectedMode: SemiAuto

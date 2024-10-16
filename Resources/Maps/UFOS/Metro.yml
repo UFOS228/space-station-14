@@ -361,12 +361,10 @@ entities:
           4,-7:
             0: 65535
           4,-6:
-            0: 57599
-            1: 4096
+            0: 61695
           4,-5:
-            1: 9
-            0: 118
-            2: 128
+            0: 247
+            1: 8
           -4,-6:
             0: 56784
           -4,-5:
@@ -550,23 +548,8 @@ entities:
         - volume: 2500
           temperature: 293.15
           moles:
-          - 21.6852
-          - 81.57766
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 293.14975
-          moles:
-          - 20.078888
-          - 75.53487
+          - 21.813705
+          - 82.06108
           - 0
           - 0
           - 0
@@ -643,6 +626,15 @@ entities:
     - type: Transform
       pos: -7.439186,19.475595
       parent: 2
+- proto: ActionToggleInternals
+  entities:
+  - uid: 2166
+    components:
+    - type: Transform
+      parent: 1999
+    - type: InstantAction
+      originalIconColor: '#FFFFFFFF'
+      container: 1999
 - proto: ActionToggleLight
   entities:
   - uid: 172
@@ -694,6 +686,16 @@ entities:
     components:
     - type: Transform
       pos: 15.728537,-25.611635
+      parent: 2
+  - uid: 3493
+    components:
+    - type: Transform
+      pos: 15.5066,-25.283707
+      parent: 2
+  - uid: 3494
+    components:
+    - type: Transform
+      pos: 15.65948,-25.49204
       parent: 2
 - proto: AlwaysPoweredlightRed
   entities:
@@ -1252,12 +1254,12 @@ entities:
   - uid: 1796
     components:
     - type: Transform
-      pos: 11.431162,2.8372653
+      pos: 11.450313,1.3045826
       parent: 2
   - uid: 3454
     components:
     - type: Transform
-      pos: -15.615682,-22.213484
+      pos: -10.494669,-16.421871
       parent: 2
 - proto: BoxFolderWhite
   entities:
@@ -1282,6 +1284,18 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+- proto: BoxInflatable
+  entities:
+  - uid: 3487
+    components:
+    - type: Transform
+      pos: 14.2474,-22.331802
+      parent: 2
+  - uid: 3488
+    components:
+    - type: Transform
+      pos: 14.7783,-22.346552
+      parent: 2
 - proto: BoxLethalshot
   entities:
   - uid: 750
@@ -1481,7 +1495,7 @@ entities:
   - uid: 1689
     components:
     - type: Transform
-      pos: 11.584978,3.585568
+      pos: 11.61709,1.9160795
       parent: 2
   - uid: 2067
     components:
@@ -7338,13 +7352,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 7.5,-24.5
       parent: 2
-- proto: ClothingBackpackDuffelMilitary
-  entities:
-  - uid: 2163
-    components:
-    - type: Transform
-      pos: 18.740206,-18.219435
-      parent: 2
 - proto: ClothingBackpackDuffelSurgeryFilled
   entities:
   - uid: 629
@@ -7357,36 +7364,22 @@ entities:
   - uid: 2164
     components:
     - type: Transform
-      pos: 18.698542,-18.608324
+      pos: 18.491867,-18.595871
       parent: 2
-- proto: ClothingBeltMilitaryWebbing
+- proto: ClothingBeltSalvageWebbing
   entities:
-  - uid: 2165
+  - uid: 1995
     components:
     - type: Transform
-      pos: 17.445993,-18.28888
+      pos: 17.651009,-18.510841
       parent: 2
-  - uid: 2166
+- proto: ClothingBeltSecurityWebbing
+  entities:
+  - uid: 1994
     components:
     - type: Transform
-      pos: 17.501547,-18.608324
+      pos: 17.338657,-18.260841
       parent: 2
-    - type: GroupExamine
-      group:
-      - hoverMessage: ""
-        contextText: verb-examine-group-other
-        icon: /Textures/Interface/examine-star.png
-        components:
-        - Armor
-        - ClothingSpeedModifier
-        entries:
-        - message: >-
-            Обеспечивает следующую защиту:
-
-            - [color=orange]Взрывной[/color] урон [color=white]к содержимому[/color] снижается на [color=lightblue]50%[/color].
-          priority: 0
-          component: Armor
-        title: null
 - proto: ClothingBeltStorageWaistbag
   entities:
   - uid: 2553
@@ -7514,49 +7507,44 @@ entities:
     - type: Transform
       pos: -2.6504688,20.235853
       parent: 2
+- proto: ClothingHeadHelmetRiot
+  entities:
+  - uid: 3486
+    components:
+    - type: Transform
+      pos: 17.382118,-24.249207
+      parent: 2
 - proto: ClothingMaskGas
   entities:
   - uid: 1964
     components:
     - type: Transform
-      pos: 15.575747,-23.38266
+      pos: 15.381518,-22.485342
       parent: 2
   - uid: 1965
     components:
     - type: Transform
-      pos: 15.482058,-23.24898
+      pos: 15.687276,-22.471453
       parent: 2
   - uid: 1967
     components:
     - type: Transform
-      pos: 15.659079,-23.50766
+      pos: 15.715072,-22.27701
       parent: 2
   - uid: 1968
     components:
     - type: Transform
-      pos: 15.784079,-23.61877
-      parent: 2
-- proto: ClothingMaskGasExplorer
-  entities:
-  - uid: 1994
-    components:
-    - type: Transform
-      pos: 15.520193,-22.403025
-      parent: 2
-  - uid: 1995
-    components:
-    - type: Transform
-      pos: 15.728525,-22.625246
+      pos: 15.409314,-22.235342
       parent: 2
   - uid: 1996
     components:
     - type: Transform
-      pos: 15.617414,-22.486357
+      pos: 15.423213,-22.665897
       parent: 2
-  - uid: 1998
+  - uid: 2165
     components:
     - type: Transform
-      pos: 15.395193,-22.264135
+      pos: 15.701175,-22.63812
       parent: 2
 - proto: ClothingMaskMuzzle
   entities:
@@ -7593,7 +7581,7 @@ entities:
   - uid: 2162
     components:
     - type: Transform
-      pos: 18.365206,-18.386103
+      pos: 18.505764,-18.276428
       parent: 2
   - uid: 3351
     components:
@@ -7653,39 +7641,73 @@ entities:
     - type: Transform
       pos: 17.265139,-25.640945
       parent: 2
-- proto: ClothingShoesBootsSyndieFilled
+- proto: ClothingOuterArmorRiot
+  entities:
+  - uid: 3063
+    components:
+    - type: Transform
+      pos: 17.618073,-24.485193
+      parent: 2
+    - type: GroupExamine
+      group:
+      - hoverMessage: ""
+        contextText: verb-examine-group-other
+        icon: /Textures/Interface/examine-star.png
+        components:
+        - Armor
+        - ClothingSpeedModifier
+        entries:
+        - message: Понижает вашу скорость на [color=yellow]10%[/color].
+          priority: 0
+          component: ClothingSpeedModifier
+        - message: >-
+            Обеспечивает следующую защиту:
+
+            - [color=yellow]Ударный[/color] урон снижается на [color=lightblue]60%[/color].
+
+            - [color=yellow]Режущий[/color] урон снижается на [color=lightblue]60%[/color].
+
+            - [color=yellow]Колющий[/color] урон снижается на [color=lightblue]30%[/color].
+
+            - [color=yellow]Высокотемпературный[/color] урон снижается на [color=lightblue]10%[/color].
+
+            - [color=yellow]Кислотный[/color] урон снижается на [color=lightblue]10%[/color].
+
+            - [color=orange]Взрывной[/color] урон снижается на [color=lightblue]10%[/color].
+          priority: 0
+          component: Armor
+        title: null
+- proto: ClothingShoesBootsCombat
   entities:
   - uid: 2035
     components:
     - type: Transform
-      pos: 17.330915,-23.243248
+      pos: 17.660698,-23.236877
       parent: 2
   - uid: 2036
     components:
     - type: Transform
-      pos: 17.483694,-23.45158
+      pos: 17.631203,-23.428617
       parent: 2
   - uid: 2037
     components:
     - type: Transform
-      pos: 17.650358,-23.646025
+      pos: 17.660698,-23.635107
       parent: 2
-- proto: ClothingShoesSwat
-  entities:
   - uid: 2038
     components:
     - type: Transform
-      pos: 17.324747,-24.24123
+      pos: 17.21828,-23.222128
       parent: 2
   - uid: 2039
     components:
     - type: Transform
-      pos: 17.519194,-24.421785
+      pos: 17.21828,-23.39912
       parent: 2
   - uid: 2040
     components:
     - type: Transform
-      pos: 17.685862,-24.560673
+      pos: 17.203535,-23.60561
       parent: 2
 - proto: ClothingUniformJumpskirtPrisoner
   entities:
@@ -7961,6 +7983,11 @@ entities:
     - type: Transform
       pos: 19.401735,-27.431978
       parent: 2
+  - uid: 3495
+    components:
+    - type: Transform
+      pos: 19.538597,-27.460606
+      parent: 2
 - proto: ComfyChair
   entities:
   - uid: 1927
@@ -8107,8 +8134,8 @@ entities:
         immutable: False
         temperature: 293.14673
         moles:
-        - 1.7459903
-        - 6.568249
+        - 1.8856695
+        - 7.0937095
         - 0
         - 0
         - 0
@@ -8125,13 +8152,20 @@ entities:
           showEnts: False
           occludes: True
           ents:
-          - 2773
-          - 2774
-          - 2776
-          - 2777
+          - invalid
+          - invalid
+          - invalid
+          - invalid
+          - invalid
+          - invalid
           - 2779
-          - 2781
           - 2783
+          - 2781
+          - invalid
+          - 2777
+          - 2776
+          - 2774
+          - 2773
         paper_label: !type:ContainerSlot
           showEnts: False
           occludes: True
@@ -8385,8 +8419,16 @@ entities:
   - uid: 1999
     components:
     - type: Transform
-      pos: 15.770193,-24.671362
+      pos: 15.701175,-24.547596
       parent: 2
+    - type: GasTank
+      toggleActionEntity: 2166
+    - type: ActionsContainer
+    - type: ContainerContainer
+      containers:
+        actions: !type:Container
+          ents:
+          - 2166
   - uid: 2000
     components:
     - type: Transform
@@ -8396,6 +8438,11 @@ entities:
     components:
     - type: Transform
       pos: 15.686857,-24.574139
+      parent: 2
+  - uid: 3492
+    components:
+    - type: Transform
+      pos: 15.520499,-24.311485
       parent: 2
 - proto: FenceMetalGate
   entities:
@@ -8602,7 +8649,7 @@ entities:
   - uid: 3451
     components:
     - type: Transform
-      pos: -15.497621,-21.667759
+      pos: -10.64008,-17.041527
       parent: 2
 - proto: FlippoLighter
   entities:
@@ -8751,56 +8798,6 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -2.5,-41.5
-      parent: 2
-  - uid: 3054
-    components:
-    - type: Transform
-      pos: -5.5,-47.5
-      parent: 2
-  - uid: 3055
-    components:
-    - type: Transform
-      pos: -6.5,-48.5
-      parent: 2
-  - uid: 3056
-    components:
-    - type: Transform
-      pos: -5.5,-48.5
-      parent: 2
-  - uid: 3057
-    components:
-    - type: Transform
-      pos: -6.5,-47.5
-      parent: 2
-  - uid: 3058
-    components:
-    - type: Transform
-      pos: -7.5,-48.5
-      parent: 2
-  - uid: 3059
-    components:
-    - type: Transform
-      pos: -7.5,-47.5
-      parent: 2
-  - uid: 3060
-    components:
-    - type: Transform
-      pos: -8.5,-47.5
-      parent: 2
-  - uid: 3061
-    components:
-    - type: Transform
-      pos: -8.5,-48.5
-      parent: 2
-  - uid: 3062
-    components:
-    - type: Transform
-      pos: -9.5,-48.5
-      parent: 2
-  - uid: 3063
-    components:
-    - type: Transform
-      pos: -9.5,-47.5
       parent: 2
 - proto: FolderSpawner
   entities:
@@ -9070,8 +9067,8 @@ entities:
         immutable: False
         temperature: 293.14673
         moles:
-        - 1.8856695
-        - 7.0937095
+        - 1.8968438
+        - 7.1357465
         - 0
         - 0
         - 0
@@ -9088,13 +9085,13 @@ entities:
           showEnts: False
           occludes: True
           ents:
-          - 2060
-          - 2059
-          - 2061
-          - 2062
-          - 2020
-          - 2021
           - 2022
+          - 2021
+          - 2020
+          - 2062
+          - 2061
+          - 2059
+          - 2060
         paper_label: !type:ContainerSlot
           showEnts: False
           occludes: True
@@ -10021,14 +10018,6 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-- proto: MagazineLightRiflePkBox
-  entities:
-  - uid: 1688
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 11.590452,3.5641408
-      parent: 2
 - proto: MagazinePistolSubMachineGun
   entities:
   - uid: 2775
@@ -10337,6 +10326,59 @@ entities:
     components:
     - type: Transform
       pos: -11.5,-18.5
+      parent: 2
+- proto: MetroWater
+  entities:
+  - uid: 1688
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 11.5,3.5
+      parent: 2
+  - uid: 3054
+    components:
+    - type: Transform
+      pos: -3.5,-48.5
+      parent: 2
+  - uid: 3055
+    components:
+    - type: Transform
+      pos: -4.5,-48.5
+      parent: 2
+  - uid: 3056
+    components:
+    - type: Transform
+      pos: -4.5,-49.5
+      parent: 2
+  - uid: 3057
+    components:
+    - type: Transform
+      pos: -4.5,-47.5
+      parent: 2
+  - uid: 3058
+    components:
+    - type: Transform
+      pos: -22.5,-32.5
+      parent: 2
+  - uid: 3059
+    components:
+    - type: Transform
+      pos: -4.5,-46.5
+      parent: 2
+  - uid: 3060
+    components:
+    - type: Transform
+      pos: -5.5,-47.5
+      parent: 2
+  - uid: 3061
+    components:
+    - type: Transform
+      pos: -22.5,-31.5
+      parent: 2
+  - uid: 3062
+    components:
+    - type: Transform
+      pos: -5.5,-48.5
       parent: 2
 - proto: MopBucketFull
   entities:
@@ -13793,6 +13835,14 @@ entities:
     - type: Transform
       pos: -1.5,-30.5
       parent: 2
+- proto: SignRadiationMed
+  entities:
+  - uid: 3496
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 11.5,2.5
+      parent: 2
 - proto: SignSecureMedRed
   entities:
   - uid: 1751
@@ -13845,6 +13895,28 @@ entities:
     components:
     - type: Transform
       pos: -10.5,10.5
+      parent: 2
+- proto: SmallFlashlight
+  entities:
+  - uid: 1998
+    components:
+    - type: Transform
+      pos: 15.339824,-23.562876
+      parent: 2
+  - uid: 2163
+    components:
+    - type: Transform
+      pos: 15.339824,-23.326763
+      parent: 2
+  - uid: 3490
+    components:
+    - type: Transform
+      pos: 15.603888,-23.285097
+      parent: 2
+  - uid: 3491
+    components:
+    - type: Transform
+      pos: 15.58999,-23.562876
       parent: 2
 - proto: SMESBasic
   entities:
@@ -19828,6 +19900,12 @@ entities:
     components:
     - type: Transform
       pos: 19.488663,-25.673431
+      parent: 2
+  - uid: 3489
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 11.765582,1.6723046
       parent: 2
 - proto: WeaponShotgunDoubleBarreled
   entities:

@@ -21,3 +21,8 @@
         whitelist:
           components:
           - Geiger
+  - type: Pda
+    id: PassengerIDCard
+    state: pda
+  - type: PdaBorderColor
+    borderColor: "#78909C"
