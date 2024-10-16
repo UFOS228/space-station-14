@@ -361,9 +361,12 @@ entities:
           4,-7:
             0: 65535
           4,-6:
-            0: 61695
+            0: 57599
+            1: 4096
           4,-5:
-            0: 255
+            1: 9
+            0: 118
+            2: 128
           -4,-6:
             0: 56784
           -4,-5:
@@ -534,6 +537,36 @@ entities:
           moles:
           - 21.824879
           - 82.10312
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - volume: 2500
+          temperature: 293.15
+          moles:
+          - 21.6852
+          - 81.57766
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - volume: 2500
+          temperature: 293.14975
+          moles:
+          - 20.078888
+          - 75.53487
           - 0
           - 0
           - 0
@@ -9037,6 +9070,48 @@ entities:
         immutable: False
         temperature: 293.14673
         moles:
+        - 1.8856695
+        - 7.0937095
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+    - type: ContainerContainer
+      containers:
+        entity_storage: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 2060
+          - 2059
+          - 2061
+          - 2062
+          - 2020
+          - 2021
+          - 2022
+        paper_label: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
+  - uid: 2063
+    components:
+    - type: Transform
+      pos: 19.5,-18.5
+      parent: 2
+    - type: Lock
+      locked: False
+    - type: EntityStorage
+      air:
+        volume: 200
+        immutable: False
+        temperature: 293.14673
+        moles:
         - 1.7459903
         - 6.568249
         - 0
@@ -9055,29 +9130,8 @@ entities:
           showEnts: False
           occludes: True
           ents:
-          - 2062
-          - 2061
-          - 2059
-          - 2060
-        paper_label: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
-  - uid: 2063
-    components:
-    - type: Transform
-      pos: 19.5,-18.5
-      parent: 2
-    - type: Lock
-      locked: False
-    - type: ContainerContainer
-      containers:
-        entity_storage: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 2065
           - 2064
+          - 2065
         paper_label: !type:ContainerSlot
           showEnts: False
           occludes: True
@@ -9138,8 +9192,8 @@ entities:
         immutable: False
         temperature: 293.14673
         moles:
-        - 1.7459903
-        - 6.568249
+        - 1.8856695
+        - 7.0937095
         - 0
         - 0
         - 0
@@ -9156,10 +9210,10 @@ entities:
           showEnts: False
           occludes: True
           ents:
-          - 2754
-          - 2755
-          - 2756
           - 2757
+          - 2756
+          - 2755
+          - 2754
         paper_label: !type:ContainerSlot
           showEnts: False
           occludes: True
@@ -9177,8 +9231,8 @@ entities:
         immutable: False
         temperature: 293.14673
         moles:
-        - 1.7459903
-        - 6.568249
+        - 1.8856695
+        - 7.0937095
         - 0
         - 0
         - 0
@@ -9195,14 +9249,14 @@ entities:
           showEnts: False
           occludes: True
           ents:
-          - 2078
-          - 2075
-          - 2076
-          - 2077
-          - 2070
-          - 2071
-          - 2072
           - 2073
+          - 2072
+          - 2071
+          - 2070
+          - 2077
+          - 2076
+          - 2075
+          - 2078
         paper_label: !type:ContainerSlot
           showEnts: False
           occludes: True
@@ -13973,6 +14027,29 @@ entities:
     - type: Transform
       pos: -9.5,-14.5
       parent: 2
+- proto: SpeedLoaderMagnum
+  entities:
+  - uid: 2020
+    components:
+    - type: Transform
+      parent: 2058
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 2021
+    components:
+    - type: Transform
+      parent: 2058
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 2022
+    components:
+    - type: Transform
+      parent: 2058
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
 - proto: SpiderWeb
   entities:
   - uid: 566
@@ -19648,7 +19725,7 @@ entities:
   - uid: 2047
     components:
     - type: Transform
-      pos: 17.56344,-26.656923
+      pos: 17.702927,-26.636534
       parent: 2
 - proto: WeaponPistolViper
   entities:
@@ -19673,12 +19750,22 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-- proto: WeaponRevolverPython
+- proto: WeaponRevolverMetro
   entities:
-  - uid: 2044
+  - uid: 2023
     components:
     - type: Transform
-      pos: 17.550623,-26.329699
+      pos: 17.348358,-26.307556
+      parent: 2
+  - uid: 3484
+    components:
+    - type: Transform
+      pos: 17.459545,-26.390888
+      parent: 2
+  - uid: 3485
+    components:
+    - type: Transform
+      pos: 17.570728,-26.488111
       parent: 2
 - proto: WeaponRifleAk
   entities:
@@ -19725,6 +19812,23 @@ entities:
       parent: 2
     - type: ChamberMagazineAmmoProvider
       boltClosed: True
+- proto: WeaponShotgunDoubleBarrel
+  entities:
+  - uid: 2024
+    components:
+    - type: Transform
+      pos: 19.544254,-25.256765
+      parent: 2
+  - uid: 2025
+    components:
+    - type: Transform
+      pos: 19.51646,-25.4651
+      parent: 2
+  - uid: 2044
+    components:
+    - type: Transform
+      pos: 19.488663,-25.673431
+      parent: 2
 - proto: WeaponShotgunDoubleBarreled
   entities:
   - uid: 743
@@ -19745,21 +19849,6 @@ entities:
     components:
     - type: Transform
       pos: -3.3573933,-3.3670714
-      parent: 2
-  - uid: 2023
-    components:
-    - type: Transform
-      pos: 19.454609,-25.284794
-      parent: 2
-  - uid: 2024
-    components:
-    - type: Transform
-      pos: 19.469364,-25.417536
-      parent: 2
-  - uid: 2025
-    components:
-    - type: Transform
-      pos: 19.469364,-25.609278
       parent: 2
 - proto: WeaponShotgunHandmade
   entities:
@@ -19822,20 +19911,22 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-  - uid: 2020
+- proto: WeaponShotgunUboinik
+  entities:
+  - uid: 3481
     components:
     - type: Transform
-      pos: 19.498878,-24.246197
+      pos: 19.460869,-24.242876
       parent: 2
-  - uid: 2021
+  - uid: 3482
     components:
     - type: Transform
-      pos: 19.484123,-24.467436
+      pos: 19.460869,-24.395655
       parent: 2
-  - uid: 2022
+  - uid: 3483
     components:
     - type: Transform
-      pos: 19.528397,-24.673925
+      pos: 19.474766,-24.57621
       parent: 2
 - proto: WeaponSniperMosin
   entities:
