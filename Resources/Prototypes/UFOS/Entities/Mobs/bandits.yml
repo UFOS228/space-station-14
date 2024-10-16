@@ -1,5 +1,6 @@
 - type: entity
   name: Bandit
+  suffix: "Metro NPC"
   parent: BaseMobHuman
   id: MobMetroBandit
   description: Bad boy

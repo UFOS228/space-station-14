@@ -1,5 +1,6 @@
 - type: entity
   id: AiMedkit
+  suffix: Metro medicine
   parent: [ BaseStorageItem, BaseBagOpenClose ]
   name: Ai-2 medkit
   description: A case for holding your syringes with medicine.

@@ -2,6 +2,7 @@
 - type: entity
   id: Rails
   name: rails
+  suffix: "Metro Decoration"
   description: Rails.
   placement:
     mode: SnapgridCenter

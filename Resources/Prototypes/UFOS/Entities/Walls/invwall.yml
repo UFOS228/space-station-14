@@ -2,7 +2,7 @@
   parent: BaseStructure
   id: InvWall
   name: Invisible wall
-  postfix: "[UFOS]"
+  suffix: "Metro Decoration"
   description: Keeps the air in and the greytide out.
   placement:
     mode: SnapgridCenter

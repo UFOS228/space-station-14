@@ -1,6 +1,7 @@
 - type: entity
   name: small-flashlight
   parent: FlashlightLantern
+  suffix: Metro device
   id: SmallFlashlight
   description: It lights the way to freedom.
   components:

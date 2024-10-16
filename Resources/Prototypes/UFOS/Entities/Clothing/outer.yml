@@ -1,6 +1,7 @@
 - type: entity
   parent: [ClothingOuterStorageBase, AllowSuitStorageClothing, ClothingOuterArmorBasic]
   id: ClothingOuterCoatBomberArmored
+  suffix: "Metro Clothing"
   name: bomber jacket armored
   description: A thick, well-worn WW2 leather bomber jacket.
   components:

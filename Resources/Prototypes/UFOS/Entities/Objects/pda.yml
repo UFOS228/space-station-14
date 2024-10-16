@@ -1,6 +1,7 @@
 - type: entity
   parent: PassengerPDA
   id: MetroPDA
+  suffix: Metro device
   name: PDA
   description: Personal Data Assistant.
   components:
@@ -12,3 +13,11 @@
     maskPath: /Textures/Effects/LightMasks/cone.png
     color: "#FED38A"
     energy: 0.4
+  - type: Matchbox
+  - type: ItemSlots
+    slots:
+      item:
+        name: slot-geiger
+        whitelist:
+          components:
+          - Geiger
