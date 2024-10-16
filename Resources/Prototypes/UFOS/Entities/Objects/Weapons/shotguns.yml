@@ -1,0 +1,43 @@
+- type: entity
+  name: Uboinik
+  parent: [BaseWeaponShotgun, BaseGunWieldable, BaseWeaponClothing]
+  id: WeaponShotgunUboinik
+  suffix: "[Metro Guns]"
+  description: Uses .50 shotgun shells.
+  components:
+  - type: Item
+    size: Large
+    shape:
+    - 0,0,4,0
+    sprite: Objects/Weapons/Guns/Shotguns/pump_inhands_64x.rsi
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Shotguns/pump.rsi
+  - type: Clothing
+    sprite: Objects/Weapons/Guns/Shotguns/pump.rsi
+  - type: GunRequiresWield #remove when inaccuracy on spreads is fixed
+  - type: BallisticAmmoProvider
+    capacity: 6
+    soundInsert:
+      collection: UboinikReload
+  - type: Tag
+    tags:
+    - WeaponShotgunUboinik
+  - type: Gun
+    soundGunshot:
+      path: /Audio/UFOS/Weapon/uboinik/uboyneg_shoot_1.ogg
+    soundEmpty:
+      path: /Audio/UFOS/Weapon/uboinik/ubo_dry_fire_0.ogg
+
+- type: soundCollection
+  id: UboinikReload
+  files:
+    - /Audio/UFOS/Weapon/uboinik/ubo_patron_0.ogg
+    - /Audio/UFOS/Weapon/uboinik/ubo_patron_1.ogg
+    - /Audio/UFOS/Weapon/uboinik/ubo_patron_2.ogg
+    - /Audio/UFOS/Weapon/uboinik/ubo_patron_3.ogg
+    - /Audio/UFOS/Weapon/uboinik/ubo_patron_4.ogg
+    - /Audio/UFOS/Weapon/uboinik/ubo_patron_5.ogg
+    - /Audio/UFOS/Weapon/uboinik/ubo_patron_6.ogg
+    - /Audio/UFOS/Weapon/uboinik/ubo_patron_7.ogg
+    - /Audio/UFOS/Weapon/uboinik/ubo_patron_8.ogg
+    - /Audio/UFOS/Weapon/uboinik/ubo_patron_9.ogg

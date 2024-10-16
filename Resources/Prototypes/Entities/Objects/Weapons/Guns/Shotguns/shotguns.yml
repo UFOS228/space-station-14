@@ -188,43 +188,43 @@
     soundGunshot:
       path: /Audio/Corvax/Weapons/Guns/Gunshots/shotgun_alt.ogg
 
-- type: entity
-  name: sawn-off shotgun
-  parent: BaseWeaponShotgun
-  id: WeaponShotgunSawn
-  description: Groovy! Uses .50 shotgun shells.
-  components:
-  - type: Sprite
-    sprite: Objects/Weapons/Guns/Shotguns/sawn.rsi
-  - type: Clothing
-    sprite: Objects/Weapons/Guns/Shotguns/sawn.rsi
-  - type: Item
-    size: Small
-    sprite: Objects/Weapons/Guns/Shotguns/sawn_inhands_64x.rsi
-  - type: Gun
-    fireRate: 4
-    soundGunshot: # Corvax-Guns
-      path: /Audio/Corvax/Weapons/Guns/Gunshots/shotgun_sawed.ogg
-  - type: BallisticAmmoProvider
-    capacity: 2
-  - type: Construction
-    graph: ShotgunSawn
-    node: shotgunsawn
-    deconstructionTarget: null
+# - type: entity
+#   name: sawn-off shotgun
+#   parent: BaseWeaponShotgun
+#   id: WeaponShotgunSawn
+#   description: Groovy! Uses .50 shotgun shells.
+#   components:
+#   - type: Sprite
+#     sprite: Objects/Weapons/Guns/Shotguns/sawn.rsi
+#   - type: Clothing
+#     sprite: Objects/Weapons/Guns/Shotguns/sawn.rsi
+#   - type: Item
+#     size: Small
+#     sprite: Objects/Weapons/Guns/Shotguns/sawn_inhands_64x.rsi
+#   - type: Gun
+#     fireRate: 4
+#     soundGunshot: # Corvax-Guns
+#       path: /Audio/Corvax/Weapons/Guns/Gunshots/shotgun_sawed.ogg
+#   - type: BallisticAmmoProvider
+#     capacity: 2
+#   - type: Construction
+#     graph: ShotgunSawn
+#     node: shotgunsawn
+#     deconstructionTarget: null
 
-- type: entity
-  name: sawn-off shotgun
-  parent: WeaponShotgunSawn
-  id: WeaponShotgunSawnEmpty
-  description: Groovy! Uses .50 shotgun shells.
-  suffix: Empty
-  components:
-  - type: BallisticAmmoProvider
-    proto: null
-  - type: Construction
-    graph: ShotgunSawn
-    node: shotgunsawn
-    deconstructionTarget: null
+# - type: entity
+#   name: sawn-off shotgun
+#   parent: WeaponShotgunSawn
+#   id: WeaponShotgunSawnEmpty
+#   description: Groovy! Uses .50 shotgun shells.
+#   suffix: Empty
+#   components:
+#   - type: BallisticAmmoProvider
+#     proto: null
+#   - type: Construction
+#     graph: ShotgunSawn
+#     node: shotgunsawn
+#     deconstructionTarget: null
 
 - type: entity
   name: handmade pistol

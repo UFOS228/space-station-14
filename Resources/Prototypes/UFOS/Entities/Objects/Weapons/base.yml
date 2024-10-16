@@ -4,7 +4,7 @@
   parent: BaseWeaponClothingOnlySounds
   components:
   - type: Clothing
-    unequipDelay: 0.4
+    unequipDelay: 0.3
     equipDelay: 0.2
 
 
@@ -13,6 +13,15 @@
   components:
   - type: Clothing
     unequipSound:
-      path: /Audio/UFOS/Dress/mvt_slow_2.ogg
+      path: /Audio/UFOS/Weapon/Handling/draw.ogg
     equipSound:
-      path: /Audio/UFOS/Dress/mvt_short_2.ogg
+      path: /Audio/UFOS/Weapon/Handling/undraw.ogg
+
+- type: entity
+  id: BaseWeaponClothingOnlySoundsPistols
+  components:
+  - type: Clothing
+    unequipSound:
+      path: /Audio/UFOS/Dress/mvt_strong_7.ogg
+    equipSound:
+      path: /Audio/UFOS/Dress/mvt_short_6.ogg

@@ -1,0 +1,15 @@
+- type: entity
+  name: Revolver
+  suffix: "[Metro Guns]"
+  parent: [BaseWeaponRevolver, BaseWeaponClothingOnlySoundsPistols]
+  id: WeaponRevolverMetro
+  description: Uses .45 magnum ammo.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Revolvers/inspector.rsi
+  - type: Clothing
+    sprite: Objects/Weapons/Guns/Revolvers/inspector.rsi
+  - type: RevolverAmmoProvider
+    capacity: 6
+    chambers: [ True, True, True, True, True, True ]
+    ammoSlots: [ null, null, null, null, null, null ]
