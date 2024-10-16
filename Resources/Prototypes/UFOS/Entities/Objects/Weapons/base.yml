@@ -87,18 +87,15 @@
   components:
   - type: Telescope
     divisor: 0.2
-    lerpAmount: 0.34
 - type: entity
   id: x2Scope
   abstract: true
   components:
   - type: Telescope
     divisor: 0.2
-    lerpAmount: 0.34
 - type: entity
   id: SniperScope
   abstract: true
   components:
   - type: Telescope
     divisor: 0.09
-    lerpAmount: 0.34

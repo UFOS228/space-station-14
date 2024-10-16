@@ -11,6 +11,12 @@ public sealed partial class TelescopeComponent : Component
     [DataField, ViewVariables(VVAccess.ReadWrite), AutoNetworkedField]
     public float LerpAmount = 0.95f;
 
+    [DataField, ViewVariables(VVAccess.ReadWrite), AutoNetworkedField]
+    public float MinLength = 0.2f;
+
+    [DataField, ViewVariables(VVAccess.ReadWrite), AutoNetworkedField]
+    public float MaxLength = 0.4f;
+
     [ViewVariables]
     public EntityUid? LastEntity;
 }

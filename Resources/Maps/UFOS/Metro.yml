@@ -380,7 +380,8 @@ entities:
           -2,-8:
             0: 30583
           -2,-7:
-            0: 30583
+            0: 30071
+            2: 512
           -2,-6:
             0: 61559
           -2,-9:
@@ -550,6 +551,21 @@ entities:
           moles:
           - 21.813705
           - 82.06108
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - volume: 2500
+          temperature: 293.14975
+          moles:
+          - 20.078888
+          - 75.53487
           - 0
           - 0
           - 0
@@ -7359,12 +7375,42 @@ entities:
     - type: Transform
       pos: -2.4699135,20.691652
       parent: 2
+- proto: ClothingBackpackMerc
+  entities:
+  - uid: 3501
+    components:
+    - type: Transform
+      pos: 18.598602,-20.645802
+      parent: 2
+    - type: GroupExamine
+      group:
+      - hoverMessage: ""
+        contextText: verb-examine-group-other
+        icon: /Textures/Interface/examine-star.png
+        components:
+        - Armor
+        - ClothingSpeedModifier
+        entries:
+        - message: >-
+            Обеспечивает следующую защиту:
+
+            - [color=orange]Взрывной[/color] урон [color=white]к содержимому[/color] снижается на [color=lightblue]10%[/color].
+          priority: 0
+          component: Armor
+        title: null
 - proto: ClothingBackpackMilitarySatchel
   entities:
   - uid: 2164
     components:
     - type: Transform
       pos: 18.491867,-18.595871
+      parent: 2
+- proto: ClothingBeltBandolier
+  entities:
+  - uid: 2042
+    components:
+    - type: Transform
+      pos: 17.458527,-18.388489
       parent: 2
 - proto: ClothingBeltSalvageWebbing
   entities:
@@ -7458,6 +7504,20 @@ entities:
     - type: Transform
       pos: -3.7771626,24.709286
       parent: 2
+- proto: ClothingEyesGlassesMercenary
+  entities:
+  - uid: 3506
+    components:
+    - type: Transform
+      pos: 18.903927,-20.173012
+      parent: 2
+- proto: ClothingHandsMercGlovesCombat
+  entities:
+  - uid: 3503
+    components:
+    - type: Transform
+      pos: 17.470783,-25.930649
+      parent: 2
 - proto: ClothingHeadHatCone
   entities:
   - uid: 833
@@ -7507,12 +7567,19 @@ entities:
     - type: Transform
       pos: -2.6504688,20.235853
       parent: 2
+- proto: ClothingHeadHelmetMerc
+  entities:
+  - uid: 3502
+    components:
+    - type: Transform
+      pos: 17.28674,-24.223354
+      parent: 2
 - proto: ClothingHeadHelmetRiot
   entities:
   - uid: 3486
     components:
     - type: Transform
-      pos: 17.382118,-24.249207
+      pos: 17.562786,-24.121061
       parent: 2
 - proto: ClothingMaskGas
   entities:
@@ -7545,6 +7612,13 @@ entities:
     components:
     - type: Transform
       pos: 15.701175,-22.63812
+      parent: 2
+- proto: ClothingMaskGasMerc
+  entities:
+  - uid: 3507
+    components:
+    - type: Transform
+      pos: 18.389557,-20.19728
       parent: 2
 - proto: ClothingMaskMuzzle
   entities:
@@ -7619,11 +7693,6 @@ entities:
     - type: Transform
       pos: 17.306067,-25.282896
       parent: 2
-  - uid: 2042
-    components:
-    - type: Transform
-      pos: 17.48662,-25.449562
-      parent: 2
   - uid: 2043
     components:
     - type: Transform
@@ -7640,6 +7709,13 @@ entities:
     components:
     - type: Transform
       pos: 17.265139,-25.640945
+      parent: 2
+- proto: ClothingOuterArmorHeavy
+  entities:
+  - uid: 3505
+    components:
+    - type: Transform
+      pos: 17.284824,-24.579393
       parent: 2
 - proto: ClothingOuterArmorRiot
   entities:
@@ -7677,6 +7753,13 @@ entities:
           priority: 0
           component: Armor
         title: null
+- proto: ClothingOuterVestWebMerc
+  entities:
+  - uid: 3504
+    components:
+    - type: Transform
+      pos: 17.461285,-25.608454
+      parent: 2
 - proto: ClothingShoesBootsCombat
   entities:
   - uid: 2035
@@ -7983,11 +8066,32 @@ entities:
     - type: Transform
       pos: 19.401735,-27.431978
       parent: 2
+  - uid: 2773
+    components:
+    - type: Transform
+      parent: 2772
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 2774
+    components:
+    - type: Transform
+      parent: 2772
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
   - uid: 3495
     components:
     - type: Transform
       pos: 19.538597,-27.460606
       parent: 2
+  - uid: 3500
+    components:
+    - type: Transform
+      parent: 2772
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
 - proto: ComfyChair
   entities:
   - uid: 1927
@@ -8119,12 +8223,8 @@ entities:
           showEnts: False
           occludes: True
           ent: null
-- proto: CrateHydroponics
-  entities:
   - uid: 2772
     components:
-    - type: MetaData
-      name: NPC TEST BOX
     - type: Transform
       pos: -6.5,-25.5
       parent: 2
@@ -8134,8 +8234,8 @@ entities:
         immutable: False
         temperature: 293.14673
         moles:
-        - 1.8856695
-        - 7.0937095
+        - 1.7459903
+        - 6.568249
         - 0
         - 0
         - 0
@@ -8152,20 +8252,22 @@ entities:
           showEnts: False
           occludes: True
           ents:
-          - invalid
-          - invalid
-          - invalid
-          - invalid
-          - invalid
-          - invalid
-          - 2779
+          - 3497
+          - 2784
           - 2783
+          - 2782
           - 2781
-          - invalid
+          - 2780
+          - 2779
+          - 2778
           - 2777
           - 2776
+          - 2775
           - 2774
           - 2773
+          - 3498
+          - 3499
+          - 3500
         paper_label: !type:ContainerSlot
           showEnts: False
           occludes: True
@@ -10018,38 +10120,6 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-- proto: MagazinePistolSubMachineGun
-  entities:
-  - uid: 2775
-    components:
-    - type: Transform
-      parent: 2774
-    - type: Physics
-      canCollide: False
-  - uid: 2778
-    components:
-    - type: Transform
-      parent: 2777
-    - type: Physics
-      canCollide: False
-  - uid: 2780
-    components:
-    - type: Transform
-      parent: 2779
-    - type: Physics
-      canCollide: False
-  - uid: 2782
-    components:
-    - type: Transform
-      parent: 2781
-    - type: Physics
-      canCollide: False
-  - uid: 2784
-    components:
-    - type: Transform
-      parent: 2783
-    - type: Physics
-      canCollide: False
 - proto: MaterialWoodPlank1
   entities:
   - uid: 3333
@@ -19877,6 +19947,15 @@ entities:
     - type: Transform
       pos: 19.513638,-22.718422
       parent: 2
+  - uid: 2776
+    components:
+    - type: Transform
+      parent: 2772
+    - type: ChamberMagazineAmmoProvider
+      boltClosed: True
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
   - uid: 3350
     components:
     - type: Transform
@@ -20032,35 +20111,7 @@ entities:
     - type: Transform
       pos: 19.543152,-23.749
       parent: 2
-  - uid: 2773
-    components:
-    - type: Transform
-      parent: 2772
-    - type: ChamberMagazineAmmoProvider
-      boltClosed: True
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
-  - uid: 2774
-    components:
-    - type: Transform
-      parent: 2772
-    - type: ChamberMagazineAmmoProvider
-      boltClosed: True
-    - type: ContainerContainer
-      containers:
-        gun_magazine: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: 2775
-        gun_chamber: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
-  - uid: 2776
+  - uid: 2775
     components:
     - type: Transform
       parent: 2772
@@ -20075,16 +20126,15 @@ entities:
       parent: 2772
     - type: ChamberMagazineAmmoProvider
       boltClosed: True
-    - type: ContainerContainer
-      containers:
-        gun_magazine: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: 2778
-        gun_chamber: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 2778
+    components:
+    - type: Transform
+      parent: 2772
+    - type: ChamberMagazineAmmoProvider
+      boltClosed: True
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
@@ -20094,16 +20144,15 @@ entities:
       parent: 2772
     - type: ChamberMagazineAmmoProvider
       boltClosed: True
-    - type: ContainerContainer
-      containers:
-        gun_magazine: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: 2780
-        gun_chamber: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 2780
+    components:
+    - type: Transform
+      parent: 2772
+    - type: ChamberMagazineAmmoProvider
+      boltClosed: True
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
@@ -20113,16 +20162,15 @@ entities:
       parent: 2772
     - type: ChamberMagazineAmmoProvider
       boltClosed: True
-    - type: ContainerContainer
-      containers:
-        gun_magazine: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: 2782
-        gun_chamber: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 2782
+    components:
+    - type: Transform
+      parent: 2772
+    - type: ChamberMagazineAmmoProvider
+      boltClosed: True
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
@@ -20132,16 +20180,42 @@ entities:
       parent: 2772
     - type: ChamberMagazineAmmoProvider
       boltClosed: True
-    - type: ContainerContainer
-      containers:
-        gun_magazine: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: 2784
-        gun_chamber: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 2784
+    components:
+    - type: Transform
+      parent: 2772
+    - type: ChamberMagazineAmmoProvider
+      boltClosed: True
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 3497
+    components:
+    - type: Transform
+      parent: 2772
+    - type: ChamberMagazineAmmoProvider
+      boltClosed: True
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 3498
+    components:
+    - type: Transform
+      parent: 2772
+    - type: ChamberMagazineAmmoProvider
+      boltClosed: True
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 3499
+    components:
+    - type: Transform
+      parent: 2772
+    - type: ChamberMagazineAmmoProvider
+      boltClosed: True
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage

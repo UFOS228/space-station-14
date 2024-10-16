@@ -95,8 +95,8 @@ public sealed class TelescopeSystem : SharedTelescopeSystem
 
         var size = _viewport.PixelSize;
 
-        var maxLength = Math.Min(size.X, size.Y) * 0.4f;
-        var minLength = maxLength * 0.2f;
+        var maxLength = Math.Min(size.X, size.Y) * telescope.MaxLength;
+        var minLength = maxLength * telescope.MinLength;
 
         if (len > maxLength)
         {

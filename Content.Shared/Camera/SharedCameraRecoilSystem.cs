@@ -1,4 +1,5 @@
 using System.Numerics;
+using Content.Shared.Backmen.Telescope;
 using JetBrains.Annotations;
 using Robust.Shared.Network;
 using Robust.Shared.Serialization;
@@ -83,7 +84,7 @@ public abstract class SharedCameraRecoilSystem : EntitySystem
             recoil.LastKick = recoil.CurrentKick;
             var ev = new GetEyeOffsetEvent();
             RaiseLocalEvent(uid, ref ev);
-            _eye.SetOffset(uid, ev.Offset, eye);
+            if(!TryComp(uid, out TelescopeComponent? comp)) _eye.SetOffset(uid, ev.Offset, eye);
         }
     }
 

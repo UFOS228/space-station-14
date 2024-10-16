@@ -6,7 +6,8 @@
   components:
   - type: Telescope
     divisor: 0.3
-    lerpAmount: 0.1
+    maxLength: 0.3
+    minLength: 0.6
 
 #Syndie
 - type: entity
