@@ -1,7 +1,7 @@
 - type: entity
   name: Kalash
   suffix: "Metro Guns"
-  parent: [BaseWeaponRifle, BaseWeaponClothing, SpeedModifierBigGun]
+  parent: [BaseWeaponRifle, BaseWeaponClothing, SpeedModifierBigGun, LightScope]
   id: WeaponRifleAkMetro
   description: An iconic weapon of war. Uses .30 rifle ammo.
   components:

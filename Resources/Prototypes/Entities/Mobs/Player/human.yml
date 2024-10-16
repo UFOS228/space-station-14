@@ -3,6 +3,10 @@
   name: Urist McHands
   parent: BaseMobHuman
   id: MobHuman
+  components:
+  - type: Telescope
+    divisor: 0.3
+    lerpAmount: 0.1
 
 #Syndie
 - type: entity

@@ -82,6 +82,7 @@
       dependsOn: jumpsuit
       displayName: Pocket 2
       stripHidden: false
+    #METRO
     - name: holster
       slotTexture: web
       fullTextureName: template_small
@@ -92,6 +93,7 @@
       strippingWindowPos: 1,5
       displayName: Holster
       stripHidden: false
+      dependsOn: outerClothing
       dependsOnComponents:
       - type: AllowSuitStorage
     - name: suitstorage
@@ -105,6 +107,7 @@
       dependsOnComponents:
       - type: AllowSuitStorage
       displayName: Suit Storage
+    #METRO
     - name: suitstorage1
       slotTexture: suit_storage
       slotFlags:   SUITSTORAGE
@@ -135,6 +138,7 @@
       uiWindowPos: 3,1
       strippingWindowPos: 1,5
       displayName: Belt
+    #METRO
     - name: belt2
       slotTexture: belt
       fullTextureName: template_small
