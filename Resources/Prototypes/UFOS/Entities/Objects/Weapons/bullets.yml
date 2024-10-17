@@ -1,0 +1,39 @@
+- type: entity
+  id: CartridgeRifleArmy
+  name: cartridge (.45 army)
+  suffix: Metro Ammo
+  parent: BaseCartridgeLightRifle
+  components:
+  - type: CartridgeAmmo
+    proto: ProjectileArmy
+  - type: Tag
+    tags:
+      - AmmoCurrency
+      - Cartridge
+      - CartridgeLightRifle
+
+
+- type: entity
+  id: ProjectileArmy
+  name: proj 5.45 army bullet
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 30
+
+
+- type: entity
+  id: MagazineLightRifleArmy
+  name: "magazine (.45 rifle army)"
+  suffix: Metro Ammo
+  parent: MagazineLightRifle
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgeRifleArmy
+  - type: Tag
+    tags:
+      - AmmoCurrency
+      - MagazineLightRifle

@@ -1,0 +1,39 @@
+- type: entity
+  name: bullet wallet
+  id: MetroWallet
+  suffix: Metro Device
+  parent: BaseStorageItem
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Janitorial/trashbag.rsi
+    layers:
+      - state: icon-0
+        map: ["enum.StorageFillLayers.Fill"]
+  - type: Storage
+    maxItemSize: Small
+    grid:
+    - 0,0,1,2
+    quickInsert: true
+    areaInsert: false
+    storageOpenSound:
+      path: /Audio/UFOS/Weapon/gilzy.ogg
+    storageInsertSound:
+      path: /Audio/UFOS/Weapon/gilzy.ogg
+    whitelist:
+      tags:
+        - AmmoCurrency
+  - type: UseDelay
+    delay: 0.5
+  - type: Tag
+    tags:
+    - Wallet
+  - type: Appearance
+  - type: StorageFillVisualizer
+    maxFillLevels: 4
+    fillBaseName: icon
+  - type: Dumpable
+  - type: Clothing
+    slots: [belt, pocket]
+    sprite: Objects/Specific/Janitorial/trashbag.rsi
+  - type: Item
+    size: Small
