@@ -82,6 +82,15 @@
   - type: SpanishAccent
 
 - type: trait
+  id: MobsterAccent
+  name: trait-bandit-name
+  description: trait-bandit-desc
+  category: SpeechTraits
+  cost: 1
+  components:
+  - type: MobsterAccent
+
+- type: trait
   id: Liar
   name: trait-liar-name
   description: trait-liar-desc

@@ -1,0 +1,18 @@
+
+- type: jukebox
+  id: blues
+  name: Omelchuk - Blues
+  path:
+    path: /Audio/UFOS/LobbyMusic/blues.ogg
+
+- type: jukebox
+  id: demo
+  name: Omelchuk - Demo
+  path:
+    path: /Audio/UFOS/LobbyMusic/demo_1.ogg
+
+- type: jukebox
+  id: old
+  name: Omelchuk - old style
+  path:
+    path: /Audio/UFOS/LobbyMusic/oldstyle.ogg
