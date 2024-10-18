@@ -16,6 +16,12 @@
   - type: HTN
     rootTask:
       task: SimpleHumanoidHostileCompound
+  - type: MobsterAccent
+  - type: TTS # Corvax-TTS
+    voice: Rat
+  - type: Grammar
+    attributes:
+      gender: male
 
 - type: startingGear
   id: BasicMetroBanditGear
