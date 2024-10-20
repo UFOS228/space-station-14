@@ -1,0 +1,160 @@
+# ГЕРМОДВЕРИ
+
+- type: entity
+  id: HermoDverTypeOne
+  name: гермодверь
+  parent: STBaseMaterialDoor
+  description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
+  suffix: ST, mapping
+  components:
+  - type: Sprite
+    sprite: _Stalker/Structures/Doors/Steels/hermodver_type_one.rsi
+    layers:
+    - state: closed
+      map: ["enum.DoorVisualLayers.Base"]
+
+- type: entity
+  id: HermoDverTypeTwo
+  name: гермодверь
+  parent: STBaseMaterialDoor
+  description: Защитно-герметические и герметические устройства, которые используются для охраны защитных сооружений гражданской обороны от вредных воздействий различного характера.
+  suffix: ST, mapping
+  components:
+  - type: Sprite
+    sprite: _Stalker/Structures/Doors/Steels/hermodver_type_two.rsi
+    layers:
+    - state: closed
+      map: ["enum.DoorVisualLayers.Base"]
+
+- type: entity
+  id: LatticeDoor
+  name: решётчатая дверь
+  parent: STBaseMaterialDoor
+  description: Это один из видов конструкций для установки в разные виды помещений с целью повышения безопасности.
+  suffix: ST, mapping
+  components:
+  - type: Sprite
+    sprite: _Stalker/Structures/Doors/Steels/lattice_door.rsi
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5,-0.5,0.5,0.5"
+        density: 1000
+        mask:
+        - FullTileMask
+        layer:
+        - TableLayer
+
+# СТВОРКИ
+
+- type: entity
+  id: StalkerGate
+  name: Створка ворот
+  parent: STBaseMaterialDoor
+  description: Жёсткая рама, которую изготавливают из трубы квадратного сечения. Облицовкой служит металлический профнастил, покрытый полимерным покрытием. Неплохо сохранилась для своих лет.
+  suffix: ST, mapping, левая
+  components:
+  - type: Sprite
+    sprite: _Stalker/Structures/Doors/Gate/Gate.rsi
+    layers:
+    - state: closed
+      map: ["enum.DoorVisualLayers.Base"]
+  - type: Door
+    bumpOpen: false
+    clickOpen: true
+    closeTimeOne: 0.2
+    closeTimeTwo: 0.6
+    openTimeOne: 0.6
+    openTimeTwo: 0.2
+    openSound:
+      path: /Audio/_Stalker/Effects/door_metal_open.ogg
+    closeSound:
+      path: /Audio/_Stalker/Effects/door_metal_close.ogg
+
+
+- type: entity
+  id: StalkerGater
+  name: Створка ворот
+  parent: STBaseMaterialDoor
+  description: Жёсткая рама, которую изготавливают из трубы квадратного сечения. Облицовкой служит металлический профнастил, покрытый полимерным покрытием. Неплохо сохранилась для своих лет.
+  suffix: ST, mapping, правая
+  components:
+  - type: Sprite
+    sprite: _Stalker/Structures/Doors/Gate/Gater.rsi
+    layers:
+    - state: closed
+      map: ["enum.DoorVisualLayers.Base"]
+  - type: Door
+    bumpOpen: false
+    clickOpen: true
+    closeTimeOne: 0.2
+    closeTimeTwo: 0.6
+    openTimeOne: 0.6
+    openTimeTwo: 0.2
+    openSound:
+      path: /Audio/_Stalker/Effects/door_metal_open.ogg
+    closeSound:
+      path: /Audio/_Stalker/Effects/door_metal_close.ogg
+
+- type: entity
+  id: StalkerGateFixed
+  name: Створка ворот
+  parent: BaseStructure
+  description: Жёсткая рама, которую изготавливают из трубы квадратного сечения. Облицовкой служит металлический профнастил, покрытый полимерным покрытием. Неплохо сохранилась для своих лет.
+  suffix: ST, mapping, левая, незакрываемая
+  components:
+    - type: InteractionOutline
+    - type: Sprite
+      sprite: _Stalker/Structures/Doors/Gate/Gate.rsi
+      layers:
+        - state: closed
+    - type: Physics
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeAabb
+            bounds: "-0.49,-0.49,0.49,0.49"
+          density: 100
+          mask:
+          - FullTileMask
+          layer:
+          - AirlockLayer
+
+- type: entity
+  id: StalkerGaterFixed
+  name: Створка ворот
+  parent: StalkerGateFixed
+  description: Жёсткая рама, которую изготавливают из трубы квадратного сечения. Облицовкой служит металлический профнастил, покрытый полимерным покрытием. Неплохо сохранилась для своих лет.
+  suffix: ST, mapping, правая, незакрываемая
+  components:
+    - type: Sprite
+      layers:
+        - state: closed
+          map: ["enum.DoorVisualLayers.Base"]
+# ПРОЧЕЕ
+
+- type: entity
+  id: MilitaryDoor2
+  name: военные ворота
+  parent: STBaseMaterialDoor
+  description: Проезд в стене или ограде, запираемый створами.
+  suffix: ST, mapping
+  components:
+  - type: Occluder
+    boundingBox: "-1.5,-0.5,1.5,0.5"
+  - type: Sprite
+    sprite: _Stalker/Structures/Doors/Steels/military_door.rsi
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-1.4,-0.5,1.4,0.5"
+        density: 1000
+        mask:
+        - FullTileMask
+        layer:
+        - AirlockLayer

@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "blocade"
+    },
+    {
+      "name": "antirad"
+    },
+    {
+      "name": "enegry"
+    },
+    {
+      "name": "medkit-1"
+    },
+    {
+      "name": "medkit-2"
+    },
+    {
+      "name": "medkit-3"
+    },
+    {
+      "name": "medkit-4"
+    },
+    {
+      "name": "medkit-5"
+    },
+    {
+      "name": "radprotector"
+    }
+  ]
+}
