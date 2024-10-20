@@ -21,7 +21,7 @@
     angleIncrease: 8
     angleDecay: 16
     soundGunshot:
-      path: /Audio/UFOS/Weapon/ublyudok_shot_close_1.ogg
+      collection: UblShoot
   - type: MagazineVisuals
     magState: mag
     steps: 4
@@ -31,3 +31,12 @@
     minAngle: 35
     maxAngle: -15
   - type: Wieldable
+
+
+- type: soundCollection
+  id: UblShoot
+  files:
+    - /Audio/UFOS/Weapon/ublyudok_shot_close_1.ogg
+    - /Audio/UFOS/Weapon/ublyudok_shot_close_2.ogg
+    - /Audio/UFOS/Weapon/ublyudok_shot_close_3.ogg
+    - /Audio/UFOS/Weapon/ublyudok_shot_close_4.ogg

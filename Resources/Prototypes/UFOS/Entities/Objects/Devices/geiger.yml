@@ -16,9 +16,10 @@
     - type: Item
       sprite: Objects/Tools/geiger.rsi
     - type: Geiger
-      attachedToSuit: true
+      attachedToSuit: false
       showControl: true
       showExamine: true
+      isNoHandling: true
     - type: Appearance
     - type: GenericVisualizer
       visuals:

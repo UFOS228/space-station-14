@@ -41,3 +41,41 @@
     - /Audio/UFOS/Weapon/uboinik/ubo_patron_7.ogg
     - /Audio/UFOS/Weapon/uboinik/ubo_patron_8.ogg
     - /Audio/UFOS/Weapon/uboinik/ubo_patron_9.ogg
+
+
+
+- type: entity
+  name: improvised shotgun
+  parent: [BaseWeaponShotgun, BaseGunWieldable, BaseWeaponClothing, SpeedModifierBigGun]
+  id: WeaponShotgunImprovised
+  description: Bad gun. But more than nothing.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Shotguns/improvised_shotgun.rsi
+  - type: Clothing
+    sprite: Objects/Weapons/Guns/Shotguns/improvised_shotgun.rsi
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,4,0
+    sprite: Objects/Weapons/Guns/Shotguns/improvised_shotgun_inhands_64x.rsi
+  - type: GunRequiresWield #remove when inaccuracy on spreads is fixed
+  - type: Gun
+    fireRate: 4 #No reason to stifle the firerate since you have to manually reload every time anyways.
+  - type: BallisticAmmoProvider
+    capacity: 1
+    proto: null
+  - type: Construction
+    graph: ImprovisedShotgunGraph
+    node: shotgun
+  - type: StaticPrice
+    price: 20
+
+- type: entity
+  name: improvised shotgun
+  parent: WeaponShotgunImprovised
+  suffix: Loaded
+  id: WeaponShotgunImprovisedLoaded
+  components:
+  - type: BallisticAmmoProvider
+    proto: ShellShotgunImprovised

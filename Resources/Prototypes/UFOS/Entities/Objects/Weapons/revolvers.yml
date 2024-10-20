@@ -5,6 +5,9 @@
   id: WeaponRevolverMetro
   description: Uses .45 magnum ammo.
   components:
+  - type: Gun
+    soundGunshot:
+      collection: MetroRevolverShoot
   - type: Sprite
     sprite: Objects/Weapons/Guns/Revolvers/inspector.rsi
   - type: Clothing
@@ -13,3 +16,10 @@
     capacity: 6
     chambers: [ True, True, True, True, True, True ]
     ammoSlots: [ null, null, null, null, null, null ]
+
+
+- type: soundCollection
+  id: MetroRevolverShoot
+  files:
+    - /Audio/UFOS/Weapon/revolver_shot_1.ogg
+    - /Audio/UFOS/Weapon/revolver_shot_2.ogg

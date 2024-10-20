@@ -15,9 +15,9 @@
   components:
   - type: Clothing
     unequipSound:
-      path: /Audio/UFOS/Weapon/Handling/draw.ogg
+      collection: MvtSlow
     equipSound:
-      path: /Audio/UFOS/Weapon/Handling/undraw.ogg
+      collection: MvtShort
 
 - type: entity
   id: BaseWeaponClothingOnlySoundsPistols
@@ -25,9 +25,9 @@
   components:
   - type: Clothing
     unequipSound:
-      path: /Audio/UFOS/Dress/mvt_strong_7.ogg
+      collection: MvtStrong
     equipSound:
-      path: /Audio/UFOS/Dress/mvt_short_6.ogg
+      collection: MvtShort
 
 #WeaponSpeedMods
 
@@ -99,3 +99,47 @@
   components:
   - type: Telescope
     divisor: 0.09
+
+
+
+
+
+
+- type: soundCollection
+  id: MvtShort
+  files:
+    - /Audio/UFOS/Dress/mvt_short_1.ogg
+    - /Audio/UFOS/Dress/mvt_short_2.ogg
+    - /Audio/UFOS/Dress/mvt_short_3.ogg
+    - /Audio/UFOS/Dress/mvt_short_4.ogg
+    - /Audio/UFOS/Dress/mvt_short_5.ogg
+    - /Audio/UFOS/Dress/mvt_short_6.ogg
+    - /Audio/UFOS/Dress/mvt_short_7.ogg
+    - /Audio/UFOS/Dress/mvt_short_8.ogg
+
+
+
+- type: soundCollection
+  id: MvtSlow
+  files:
+    - /Audio/UFOS/Dress/mvt_slow_1.ogg
+    - /Audio/UFOS/Dress/mvt_slow_2.ogg
+    - /Audio/UFOS/Dress/mvt_slow_3.ogg
+    - /Audio/UFOS/Dress/mvt_slow_4.ogg
+    - /Audio/UFOS/Dress/mvt_slow_5.ogg
+    - /Audio/UFOS/Dress/mvt_slow_6.ogg
+    - /Audio/UFOS/Dress/mvt_slow_7.ogg
+    - /Audio/UFOS/Dress/mvt_slow_8.ogg
+
+
+- type: soundCollection
+  id: MvtStrong
+  files:
+    - /Audio/UFOS/Dress/mvt_strong_1.ogg
+    - /Audio/UFOS/Dress/mvt_strong_2.ogg
+    - /Audio/UFOS/Dress/mvt_strong_3.ogg
+    - /Audio/UFOS/Dress/mvt_strong_4.ogg
+    - /Audio/UFOS/Dress/mvt_strong_5.ogg
+    - /Audio/UFOS/Dress/mvt_strong_6.ogg
+    - /Audio/UFOS/Dress/mvt_strong_7.ogg
+    - /Audio/UFOS/Dress/mvt_strong_8.ogg

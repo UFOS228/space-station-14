@@ -19,6 +19,9 @@ public sealed partial class GeigerComponent : Component
     [DataField]
     public bool AttachedToSuit;
 
+    [DataField]
+    public bool IsNoHandling;
+
     /// <summary>
     ///     Is geiger counter currently active?
     ///     If false attached entity will ignore any radiation rays.

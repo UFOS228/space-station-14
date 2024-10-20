@@ -66,7 +66,7 @@ public sealed class GeigerSystem : SharedGeigerSystem
 
     private void OnUnequippedHand(Entity<GeigerComponent> geiger, ref GotUnequippedHandEvent args)
     {
-        if (geiger.Comp.AttachedToSuit)
+        if (geiger.Comp.AttachedToSuit || geiger.Comp.IsNoHandling)
             return;
 
         SetUser(geiger, null);
