@@ -12,7 +12,7 @@
   - type: Storage
     maxItemSize: Small
     grid:
-    - 0,0,1,2
+    - 0,0,5,4
     quickInsert: true
     areaInsert: false
     storageOpenSound:
