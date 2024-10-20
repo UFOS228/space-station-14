@@ -2,8 +2,8 @@
   id: AiMedkit
   suffix: Metro medicine
   parent: [ BaseStorageItem, BaseBagOpenClose ]
-  name: Ai-2 medkit
-  description: A case for holding your syringes with medicine.
+  name: АИ-2 Аптечка
+  description: Удобный футляр для хранения медицины.
   components:
   - type: Sprite
     sprite: UFOS/Objects/Storage/ai.rsi

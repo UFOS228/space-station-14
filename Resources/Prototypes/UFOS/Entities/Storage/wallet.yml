@@ -1,5 +1,6 @@
 - type: entity
-  name: bullet wallet
+  name: Кошель
+  description: Удобная сумка для хранения патрон-денег.
   id: MetroWallet
   suffix: Metro Device
   parent: BaseStorageItem

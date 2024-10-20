@@ -1,5 +1,5 @@
 - type: entity
-  name: ai medipen
+  name: быстрый укол
   parent: ChemicalMedipen
   id: AiMedipen
   description: A rapid and safe way to stabilize patients in critical condition for personnel without advanced medical knowledge. Beware, as it's easy to overdose on epinephrine and tranexamic acid.

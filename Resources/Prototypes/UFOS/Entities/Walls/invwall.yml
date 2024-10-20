@@ -1,9 +1,9 @@
 - type: entity
   parent: BaseStructure
   id: InvWall
-  name: Invisible wall
+  name: невидимая стена
   suffix: "Metro Decoration"
-  description: Keeps the air in and the greytide out.
+  description: куда прём
   placement:
     mode: SnapgridCenter
     snap:

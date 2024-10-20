@@ -2,7 +2,7 @@
   parent: PassengerPDA
   id: MetroPDA
   suffix: Metro device
-  name: PDA
+  name: Кпк
   description: Personal Data Assistant.
   components:
   - type: PointLight
