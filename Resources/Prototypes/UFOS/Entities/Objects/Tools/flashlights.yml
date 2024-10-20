@@ -1,8 +1,8 @@
 - type: entity
-  name: small-flashlight
+  name: малый фонарик
   parent: FlashlightLantern
   suffix: Metro device
-  id: малый фонарик
+  id: SmallFlashlight
   description: Освещает путь
   components:
   - type: LightBehaviour
