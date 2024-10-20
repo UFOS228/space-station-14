@@ -289,7 +289,9 @@ entities:
           1,0:
             0: 48059
           1,-5:
-            0: 35003
+            0: 34955
+            1: 16
+            2: 32
           2,-4:
             0: 65520
           2,-3:
@@ -347,7 +349,8 @@ entities:
           1,-8:
             0: 61166
           1,-7:
-            0: 26254
+            0: 26126
+            3: 128
           2,-7:
             0: 65518
           2,-6:
@@ -366,7 +369,7 @@ entities:
             0: 61695
           4,-5:
             0: 247
-            2: 8
+            4: 8
           -4,-6:
             0: 56784
           -4,-5:
@@ -437,7 +440,8 @@ entities:
           -3,-10:
             0: 34956
           -3,-13:
-            0: 52429
+            1: 1
+            0: 52428
           -2,-12:
             0: 30719
           -2,-11:
@@ -550,6 +554,36 @@ entities:
           - 0
         - volume: 2500
           temperature: 293.14975
+          moles:
+          - 20.078888
+          - 75.53487
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - volume: 2500
+          temperature: 293.14948
+          moles:
+          - 18.472576
+          - 69.49208
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - volume: 2500
+          temperature: 293.1495
           moles:
           - 20.078888
           - 75.53487
@@ -690,6 +724,20 @@ entities:
       parent: 3351
     - type: Physics
       canCollide: False
+  - uid: 3603
+    components:
+    - type: Transform
+      parent: 3599
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 3604
+    components:
+    - type: Transform
+      parent: 3599
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
 - proto: AiMedkit
   entities:
   - uid: 736
@@ -6864,6 +6912,41 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -22.580257,-22.054905
       parent: 2
+- proto: CartridgeRifleArmy
+  entities:
+  - uid: 3600
+    components:
+    - type: Transform
+      parent: 3599
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 3601
+    components:
+    - type: Transform
+      parent: 3599
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 3602
+    components:
+    - type: Transform
+      parent: 3599
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 3608
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -12.877491,-57.39084
+      parent: 2
+  - uid: 3609
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -12.821899,-57.599174
+      parent: 2
 - proto: Catwalk
   entities:
   - uid: 230
@@ -7128,8 +7211,7 @@ entities:
   - uid: 481
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 4.6333694,-18.353537
+      pos: 3.3751981,-19.683094
       parent: 2
   - uid: 2154
     components:
@@ -7409,13 +7491,6 @@ entities:
     components:
     - type: Transform
       pos: -4.5,13.5
-      parent: 2
-- proto: ClosetRadiationSuitFilled
-  entities:
-  - uid: 675
-    components:
-    - type: Transform
-      pos: 5.5,-18.5
       parent: 2
 - proto: ClosetSteelBase
   entities:
@@ -7850,6 +7925,22 @@ entities:
           priority: 0
           component: Armor
         title: null
+- proto: ClothingOuterSuitRad
+  entities:
+  - uid: 675
+    components:
+    - type: Transform
+      parent: 540
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 3581
+    components:
+    - type: Transform
+      parent: 540
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
 - proto: ClothingOuterVestWebMerc
   entities:
   - uid: 3504
@@ -8256,6 +8347,18 @@ entities:
     - type: Transform
       pos: 11.418989,11.1285
       parent: 2
+- proto: Crack3Stalker
+  entities:
+  - uid: 3595
+    components:
+    - type: Transform
+      pos: -9.494044,-20.304693
+      parent: 2
+  - uid: 3596
+    components:
+    - type: Transform
+      pos: -4.546327,-22.332472
+      parent: 2
 - proto: CrateBodyBags
   entities:
   - uid: 858
@@ -8558,6 +8661,22 @@ entities:
     - type: Transform
       pos: 10.941383,15.770578
       parent: 2
+- proto: DrinkBeerCan
+  entities:
+  - uid: 3586
+    components:
+    - type: Transform
+      parent: 3585
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 3587
+    components:
+    - type: Transform
+      parent: 3585
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
 - proto: DrinkBottleGildlager
   entities:
   - uid: 3534
@@ -8623,6 +8742,26 @@ entities:
     components:
     - type: Transform
       pos: 10.681645,-34.501205
+      parent: 2
+- proto: EmergencyLightStalker
+  entities:
+  - uid: 3597
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -0.5,-32.5
+      parent: 2
+  - uid: 3598
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -9.5,-61.5
+      parent: 2
+  - uid: 3605
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -9.5,-69.5
       parent: 2
 - proto: EmergencyRollerBed
   entities:
@@ -10140,6 +10279,165 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -12.5,-7.5
       parent: 2
+- proto: LockerBig
+  entities:
+  - uid: 540
+    components:
+    - type: Transform
+      pos: 5.5,-18.5
+      parent: 2
+    - type: EntityStorage
+      air:
+        volume: 200
+        immutable: False
+        temperature: 293.1462
+        moles:
+        - 1.606311
+        - 6.042789
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+    - type: ContainerContainer
+      containers:
+        entity_storage: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 675
+          - 3581
+        paper_label: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
+  - uid: 3585
+    components:
+    - type: Transform
+      pos: 4.5,-18.5
+      parent: 2
+    - type: EntityStorage
+      air:
+        volume: 200
+        immutable: False
+        temperature: 293.14673
+        moles:
+        - 1.7459903
+        - 6.568249
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+    - type: ContainerContainer
+      containers:
+        entity_storage: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 3586
+          - 3587
+        paper_label: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
+- proto: LockerBigOne
+  entities:
+  - uid: 265
+    components:
+    - type: Transform
+      pos: 7.5,-26.5
+      parent: 2
+    - type: EntityStorage
+      air:
+        volume: 200
+        immutable: False
+        temperature: 293.1465
+        moles:
+        - 1.7459903
+        - 6.568249
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+    - type: ContainerContainer
+      containers:
+        entity_storage: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 334
+          - 309
+          - 286
+          - 285
+          - 284
+          - 279
+          - 278
+          - 277
+          - 267
+          - 266
+          - 305
+          - 306
+          - 307
+          - 308
+        paper_label: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
+  - uid: 3599
+    components:
+    - type: Transform
+      pos: -11.5,-51.5
+      parent: 2
+    - type: EntityStorage
+      air:
+        volume: 200
+        immutable: False
+        temperature: 293.14673
+        moles:
+        - 1.7459903
+        - 6.568249
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+    - type: ContainerContainer
+      containers:
+        entity_storage: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 3602
+          - 3600
+          - 3601
+          - 3603
+          - 3604
+        paper_label: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
 - proto: LockerBooze
   entities:
   - uid: 572
@@ -10988,6 +11286,13 @@ entities:
       parent: 2
     - type: Physics
       bodyType: Static
+- proto: PosterBilly
+  entities:
+  - uid: 3588
+    components:
+    - type: Transform
+      pos: -13.5,-8.5
+      parent: 2
 - proto: PosterBroken
   entities:
   - uid: 3151
@@ -10996,12 +11301,66 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -11.5,-50.5
       parent: 2
+- proto: PosterContrabandAdolfHitler
+  entities:
+  - uid: 3583
+    components:
+    - type: Transform
+      pos: -15.5,-47.5
+      parent: 2
+- proto: PosterContrabandStalin
+  entities:
+  - uid: 3594
+    components:
+    - type: Transform
+      pos: 5.5,-25.5
+      parent: 2
+- proto: PosterContrabandWantedBand
+  entities:
+  - uid: 3593
+    components:
+    - type: Transform
+      pos: -4.5,9.5
+      parent: 2
 - proto: PosterLegit12Gauge
   entities:
   - uid: 2015
     components:
     - type: Transform
       pos: 13.5,-22.5
+      parent: 2
+- proto: PosterLegitBloodPrintFake
+  entities:
+  - uid: 3589
+    components:
+    - type: Transform
+      pos: -22.5,-21.5
+      parent: 2
+  - uid: 3610
+    components:
+    - type: Transform
+      pos: -14.5,-56.5
+      parent: 2
+- proto: PosterLegitStalkerDrinkVodka
+  entities:
+  - uid: 3590
+    components:
+    - type: Transform
+      pos: 1.5,4.5
+      parent: 2
+- proto: PosterLegitStalkerHelp
+  entities:
+  - uid: 3592
+    components:
+    - type: Transform
+      pos: 3.5,7.5
+      parent: 2
+- proto: PosterShotaAshot
+  entities:
+  - uid: 3584
+    components:
+    - type: Transform
+      pos: -1.5,-3.5
       parent: 2
 - proto: PotatoSeeds
   entities:
@@ -13487,12 +13846,6 @@ entities:
     - type: Transform
       pos: 13.5,20.5
       parent: 2
-  - uid: 540
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -1.5,-3.5
-      parent: 2
   - uid: 557
     components:
     - type: Transform
@@ -13502,6 +13855,11 @@ entities:
     components:
     - type: Transform
       pos: 14.5,21.5
+      parent: 2
+  - uid: 3582
+    components:
+    - type: Transform
+      pos: -1.5,-3.5
       parent: 2
 - proto: SalvageCanisterSpawner
   entities:
@@ -13533,6 +13891,12 @@ entities:
     components:
     - type: Transform
       pos: -21.5,-22.5
+      parent: 2
+  - uid: 3606
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -13.5,-57.5
       parent: 2
 - proto: SalvageLootSpawner
   entities:
@@ -14402,6 +14766,13 @@ entities:
     components:
     - type: Transform
       pos: -14.5,-51.5
+      parent: 2
+- proto: Smudges2Stalker
+  entities:
+  - uid: 3591
+    components:
+    - type: Transform
+      pos: -2.5,4.5
       parent: 2
 - proto: SolidSecretDoor
   entities:
@@ -20306,37 +20677,6 @@ entities:
     - type: Transform
       pos: -12.5,13.5
       parent: 2
-- proto: WardrobePrisonFilled
-  entities:
-  - uid: 265
-    components:
-    - type: Transform
-      pos: 7.5,-26.5
-      parent: 2
-    - type: ContainerContainer
-      containers:
-        entity_storage: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 308
-          - 307
-          - 306
-          - 305
-          - 266
-          - 267
-          - 277
-          - 278
-          - 279
-          - 284
-          - 285
-          - 286
-          - 309
-          - 334
-        paper_label: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
 - proto: WaterTank
   entities:
   - uid: 1686
@@ -20466,6 +20806,14 @@ entities:
     components:
     - type: Transform
       pos: -22.35849,-21.21757
+      parent: 2
+    - type: ChamberMagazineAmmoProvider
+      boltClosed: True
+  - uid: 3607
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -12.999756,-57.65473
       parent: 2
     - type: ChamberMagazineAmmoProvider
       boltClosed: True
