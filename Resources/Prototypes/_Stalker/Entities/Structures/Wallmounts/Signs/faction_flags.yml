@@ -1,0 +1,181 @@
+# Я не знаю почему он здесь, может быть так надо, поэтому не трогаю
+- type: entity
+  parent: PosterBaseStalker
+  id: FactionFlagAnomalists
+  name: anomalist flag
+  description: A large flag with an equally huge gear.
+  suffix: ST, Mapping, Flags, Anomalists
+  components:
+  - type: Sprite
+    sprite: _Stalker/Structures/Wallmounts/faction_flags.rsi
+    state: anomalist
+
+- type: entity
+  parent: PosterBaseStalker
+  id: Banner1
+  suffix: ST, Mapping
+  name: флаг бандитов
+  components:
+  - type: Sprite
+    sprite: _Stalker/Structures/Wallmounts/banners.rsi
+    state: banner1
+
+- type: entity
+  parent: PosterBaseStalker
+  id: Banner2
+  name: флаг долга
+  suffix: ST, Mapping
+  components:
+  - type: Sprite
+    sprite: _Stalker/Structures/Wallmounts/banners.rsi
+    state: banner2
+
+- type: entity
+  parent: PosterBaseStalker
+  id: Banner3
+  name: флаг свободы
+  suffix: ST, Mapping
+  components:
+  - type: Sprite
+    sprite: _Stalker/Structures/Wallmounts/banners.rsi
+    state: banner3
+
+- type: entity
+  parent: PosterBaseStalker
+  id: Banner4
+  name: флаг наёмников
+  suffix: ST, Mapping
+  components:
+  - type: Sprite
+    sprite: _Stalker/Structures/Wallmounts/banners.rsi
+    state: banner4
+
+- type: entity
+  parent: PosterBaseStalker
+  id: Banner5
+  name: флаг завета
+  suffix: ST, Mapping
+  components:
+  - type: Sprite
+    sprite: _Stalker/Structures/Wallmounts/banners.rsi
+    state: banner5
+
+- type: entity
+  parent: PosterBaseStalker
+  id: Banner6
+  name: флаг конфедератов
+  suffix: ST, Mapping
+  components:
+  - type: Sprite
+    sprite: _Stalker/Structures/Wallmounts/banners.rsi
+    state: banner6
+
+- type: entity
+  parent: PosterBaseStalker
+  id: Banner7
+  name: флаг добра и позитива
+  suffix: ST, Mapping
+  components:
+  - type: Sprite
+    sprite: _Stalker/Structures/Wallmounts/banners.rsi
+    state: banner7
+
+- type: entity
+  parent: PosterBaseStalker
+  id: Banner8
+  name: флаг ренегатов
+  suffix: ST, Mapping
+  components:
+  - type: Sprite
+    sprite: _Stalker/Structures/Wallmounts/banners.rsi
+    state: banner8
+
+- type: entity
+  parent: PosterBaseStalker
+  id: Banner9
+  name: флаг русичей
+  suffix: ST, Mapping
+  components:
+  - type: Sprite
+    sprite: _Stalker/Structures/Wallmounts/banners.rsi
+    state: banner9
+
+- type: entity
+  parent: PosterBaseStalker
+  id: Banner10
+  name: флаг империи
+  suffix: ST, Mapping
+  components:
+  - type: Sprite
+    sprite: _Stalker/Structures/Wallmounts/banners.rsi
+    state: banner10
+
+- type: entity
+  parent: PosterBaseStalker
+  id: Banner11
+  name: флаг ООН
+  suffix: ST, Mapping
+  components:
+  - type: Sprite
+    sprite: _Stalker/Structures/Wallmounts/banners.rsi
+    state: banner11
+
+- type: entity
+  parent: PosterBaseStalker
+  id: Banner12
+  name: флаг серафимов
+  suffix: ST, Mapping
+  components:
+  - type: Sprite
+    sprite: _Stalker/Structures/Wallmounts/banners.rsi
+    state: banner12
+
+- type: entity
+  parent: PosterBaseStalker
+  id: Banner13
+  name: флаг греха
+  suffix: ST, Mapping
+  components:
+  - type: Sprite
+    sprite: _Stalker/Structures/Wallmounts/banners.rsi
+    state: banner13
+
+- type: entity
+  parent: PosterBaseStalker
+  id: Banner14
+  name: флаг чистого неба
+  suffix: ST, Mapping
+  components:
+  - type: Sprite
+    sprite: _Stalker/Structures/Wallmounts/banners.rsi
+    state: banner14
+
+- type: entity
+  parent: PosterBaseStalker
+  id: Banner15
+  name: флаг отступников
+  suffix: ST, Mapping
+  components:
+  - type: Sprite
+    sprite: _Stalker/Structures/Wallmounts/banners.rsi
+    state: banner15
+
+- type: entity
+  parent: PosterBaseStalker
+  id: Banner16
+  name: знамя ордена паломников
+  suffix: ST, Mapping, Баннер
+  components:
+  - type: Sprite
+    sprite: _Stalker/Structures/Wallmounts/banners.rsi
+    state: banner16
+
+- type: entity
+  parent: PosterBaseStalker
+  id: Banner17
+  name: флаг проекта
+  suffix: ST, Mapping, Баннер
+  components:
+  - type: Sprite
+    sprite: _Stalker/Structures/Wallmounts/banners.rsi
+    state: banner16

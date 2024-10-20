@@ -1,0 +1,15 @@
+- type: entity
+  parent: SalvageHumanCorpse
+  id: MobRandomStalkerCorpse
+  suffix: Metro Deco
+  components:
+  - type: Loadout
+    prototypes:
+    - StalkerCorpseGear
+
+- type: startingGear
+  id: StalkerCorpseGear
+  equipment:
+    shoes: ClothingShoesColorBlack
+    jumpsuit: ClothingUniformJumpsuitMercenary
+    outerClothing: ClothingOuterCoatBomber

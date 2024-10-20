@@ -1,0 +1,13 @@
+﻿- type: entity
+  id: Zerkalo
+  suffix: ST, Mapping
+  name: Зеркало
+  description: Вы видите отражение себя, а вы стильный сталкер...
+  components:
+  - type: WallMount
+  - type: Sprite
+    sprite: _Stalker/Structures/Wallmounts/mirror.rsi
+  - type: InteractionOutline
+  - type: Clickable
+  - type: Transform
+    anchored: true
