@@ -13,3 +13,17 @@
     shoes: ClothingShoesColorBlack
     jumpsuit: ClothingUniformJumpsuitMercenary
     outerClothing: ClothingOuterCoatBomber
+
+- type: entity
+  name: Random Stalker Corpse Spawner
+  id: RandomStalkerCorpseSpawner
+  suffix: Metro Deco
+  parent: SalvageHumanCorpseSpawner
+  components:
+  - type: Sprite
+    layers:
+      - state: security_officer
+      - state: green
+  - type: ConditionalSpawner
+    prototypes:
+      - MobRandomStalkerCorpse
