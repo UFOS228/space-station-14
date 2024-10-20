@@ -1,0 +1,888 @@
+#НОВАЯ 64x64!!!!!!
+#Береза
+- type: entity
+  parent: BaseTree
+  id: BirchTreeNew01
+  suffix: ST, Mapping
+  name: берёза
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Decoration/Flora/flora_tree_new.rsi
+    state: birch01
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 750
+      behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 700
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/tree_fell.ogg
+          params:
+            volume: 5
+            variation: 0.05
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          STLogStalkerT2:
+            min: 1
+            max: 2
+
+- type: entity
+  parent: BirchTreeNew01
+  id: BirchTreeNew02
+  suffix: ST, Mapping
+  name: берёза
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Decoration/Flora/flora_tree_new.rsi
+    state: birch02
+
+- type: entity
+  parent: BirchTreeNew01
+  id: BirchTreeNew03
+  suffix: ST, Mapping
+  name: берёза
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Decoration/Flora/flora_tree_new.rsi
+    state: birch03
+
+- type: entity
+  parent: BirchTreeNew01
+  id: BirchTreeNew04
+  suffix: ST, Mapping
+  name: берёза
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Decoration/Flora/flora_tree_new.rsi
+    state: birch04
+
+- type: entity
+  parent: BirchTreeNew01
+  id: BirchTreeNew05
+  suffix: ST, Mapping
+  name: берёза
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Decoration/Flora/flora_tree_new.rsi
+    state: birch05
+
+#ЕЛЬ!!!
+
+- type: entity
+  parent: BaseStalkerTree
+  id: SpruceTreeNew01
+  suffix: ST, Mapping
+  name: Ель
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Decoration/Flora/flora_tree_new.rsi
+    state: spruce01
+
+- type: entity
+  parent: BaseStalkerTree
+  id: SpruceTreeNew02
+  suffix: ST, Mapping
+  name: Ель
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Decoration/Flora/flora_tree_new.rsi
+    state: spruce02
+
+- type: entity
+  parent: BaseStalkerTree
+  id: SpruceTreeNew03
+  suffix: ST, Mapping
+  name: Ель
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Decoration/Flora/flora_tree_new.rsi
+    state: spruce03
+
+- type: entity
+  parent: BaseStalkerTree
+  id: SpruceTreeNew04
+  suffix: ST, Mapping
+  name: Ель
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Decoration/Flora/flora_tree_new.rsi
+    state: spruce04
+
+#СОСНА!!
+
+- type: entity
+  parent: BaseStalkerTree
+  id: PineTreeNew01
+  suffix: ST, Mapping
+  name: Сосна
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Decoration/Flora/flora_tree_new.rsi
+    state: pine01
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 750
+      behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 700
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/tree_fell.ogg
+          params:
+            volume: 5
+            variation: 0.05
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          STLogStalkerT1:
+            min: 1
+            max: 2
+
+- type: entity
+  parent: PineTreeNew01
+  id: PineTreeNew02
+  suffix: ST, Mapping
+  name: Сосна
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Decoration/Flora/flora_tree_new.rsi
+    state: pine02
+
+- type: entity
+  parent: PineTreeNew01
+  id: PineTreeNew03
+  suffix: ST, Mapping
+  name: Сосна
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Decoration/Flora/flora_tree_new.rsi
+    state: pine03
+
+- type: entity
+  parent: PineTreeNew01
+  id: PineTreeNew04
+  suffix: ST, Mapping
+  name: Сосна
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Decoration/Flora/flora_tree_new.rsi
+    state: pine04
+
+- type: entity
+  parent: PineTreeNew01
+  id: PineTreeNew05
+  suffix: ST, Mapping
+  name: Сосна
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Decoration/Flora/flora_tree_new.rsi
+    state: pine05
+
+- type: entity
+  parent: PineTreeNew01
+  id: PineTreeNew06
+  suffix: ST, Mapping
+  name: Сосна
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Decoration/Flora/flora_tree_new.rsi
+    state: pine06
+
+#ДУБ!!!!! АААААААААА!!!!
+
+- type: entity
+  parent: BaseStalkerTree
+  id: OakTreeNew01
+  suffix: ST, Mapping
+  name: Сосна
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Decoration/Flora/flora_tree_new.rsi
+    state: oak01
+
+- type: entity
+  parent: BaseStalkerTree
+  id: OakTreeNew02
+  suffix: ST, Mapping
+  name: Сосна
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Decoration/Flora/flora_tree_new.rsi
+    state: oak02
+
+
+###################################
+
+# БЕРЁЗЫ
+
+- type: entity
+  parent: BirchTreeNew01
+  id: BaseStalkerTree
+  suffix: ST, Mapping
+  name: берёза
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Decoration/Flora/flora_trees.rsi
+    state: birch01
+
+- type: entity
+  parent: BirchTreeNew01
+  id: BirchTree01
+  suffix: ST, Mapping
+  name: берёза
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Decoration/Flora/flora_trees.rsi
+    state: birch01
+
+- type: entity
+  parent: BirchTreeNew01
+  id: BirchTree02
+  suffix: ST, Mapping
+  name: берёза
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Decoration/Flora/flora_trees.rsi
+    state: birch02
+
+- type: entity
+  parent: BirchTreeNew01
+  id: BirchTree03
+  suffix: ST, Mapping
+  name: берёза
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Decoration/Flora/flora_trees.rsi
+    state: birch03
+
+- type: entity
+  parent: BirchTreeNew01
+  id: BirchTree04
+  suffix: ST, Mapping
+  name: берёза
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Decoration/Flora/flora_trees.rsi
+    state: birch04
+
+# СОСНА
+
+- type: entity
+  parent: PineTreeNew01
+  id: PineTree01
+  suffix: ST, Mapping
+  name: сосна
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Decoration/Flora/flora_trees.rsi
+    state: pine01
+
+- type: entity
+  parent: PineTreeNew01
+  id: PineTree02
+  suffix: ST, Mapping
+  name: сосна
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Decoration/Flora/flora_trees.rsi
+    state: pine02
+
+# ТОПОЛЬ
+
+- type: entity
+  parent: BaseStalkerTree
+  id: PoplarTree01
+  suffix: ST, Mapping
+  name: тополь
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Decoration/Flora/flora_trees.rsi
+    state: poplar01
+
+- type: entity
+  parent: BaseStalkerTree
+  id: PoplarTree02
+  suffix: ST, Mapping
+  name: тополь
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Decoration/Flora/flora_trees.rsi
+    state: poplar02
+
+# КУСТЫ
+
+- type: entity
+  id: Bush01
+  suffix: ST, Mapping
+  name: куст
+  description: Древовидное растение, разветвляющееся от самого основания.
+  components:
+  - type: Clickable
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        hard: false
+        density: 7
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.2,-0.2,0.2,0.2"
+        layer:
+        - MidImpassable
+  - type: SpeedModifierContacts
+    walkSpeedModifier: 0.8
+    sprintSpeedModifier: 0.5
+  - type: Sprite
+    sprite: _Stalker/Objects/Decoration/Flora/flora.rsi
+    state: bush01
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Wood
+  - type: MeleeSound
+    soundGroups:
+      Brute:
+        path: /Audio/Effects/chop.ogg
+        params:
+          variation: 0.05
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 250
+      behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/tree_fell.ogg
+          params:
+            volume: 5
+            variation: 0.05
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: Bush01
+  id: Bush02
+  suffix: ST, Mapping
+  name: куст
+  description: Древовидное растение, разветвляющееся от самого основания.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Decoration/Flora/flora.rsi
+    state: bush02
+
+- type: entity
+  parent: Bush01
+  id: Bush03
+  suffix: ST, Mapping
+  name: куст
+  description: Древовидное растение, разветвляющееся от самого основания.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Decoration/Flora/flora.rsi
+    state: bush03
+
+- type: entity
+  parent: Bush01
+  id: Bush04
+  suffix: ST, Mapping
+  name: куст
+  description: Древовидное растение, разветвляющееся от самого основания.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Decoration/Flora/flora.rsi
+    state: bush04
+
+- type: entity
+  parent: Bush01
+  id: Bush05
+  suffix: ST, Mapping
+  name: куст
+  description: Древовидное растение, разветвляющееся от самого основания.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Decoration/Flora/flora.rsi
+    state: bush05
+
+- type: entity
+  parent: Bush01
+  id: Bush06
+  suffix: ST, Mapping
+  name: куст
+  description: Древовидное растение, разветвляющееся от самого основания.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Decoration/Flora/flora.rsi
+    state: bush06
+
+# КУВШИНКИ
+
+- type: entity
+  parent: Bush01
+  id: kuvshinki
+  suffix: ST, Mapping
+  name: кувшинки
+  description: Многолетнее водяное растение. У нее нет стебля. Листья крупные плавающие по воде.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Decoration/Flora/flora.rsi
+    state: kuvshinki
+
+# ПНИ
+
+- type: entity
+  parent: Bush01
+  id: peny
+  suffix: ST, Mapping
+  name: пень
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Decoration/Flora/flora.rsi
+    state: pen
+
+- type: entity
+  parent: Bush01
+  id: penm
+  suffix: ST, Mapping
+  name: пень
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Decoration/Flora/flora.rsi
+    state: penm
+
+# КАМЫШЬ
+
+- type: entity
+  parent: Bush01
+  id: kamysh
+  suffix: ST, Mapping
+  name: камыш
+  description: Заселяет берега водоемов, мелководья, болота, канавы, заболоченные луга и различные сырые болотистые местности. Нередко образует сплошные заросли.
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Decoration/Flora/flora.rsi
+    state: kamysh
+
+# НОВЫЕ ДЕРЕВЬЯ
+
+- type: entity
+  parent: BaseTree
+  id: FloraTreeRed01
+  name: Дерево
+  suffix: ST, Mapping
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Decoration/Flora/flora_trees_red/flora_trees.rsi
+    state: tree01
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 750
+      behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 700
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/tree_fell.ogg
+          params:
+            volume: 5
+            variation: 0.05
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          STLogStalkerT3:
+            min: 0
+            max: 2
+
+- type: entity
+  parent: FloraTreeRed01
+  id: FloraTreeRed02
+  name: Дерево
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Decoration/Flora/flora_trees_red/flora_trees.rsi
+    state: tree02
+
+
+- type: entity
+  parent: FloraTreeRed01
+  id: FloraTreeRed03
+  name: Дерево
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Decoration/Flora/flora_trees_red/flora_trees.rsi
+    state: tree03
+
+
+- type: entity
+  parent: FloraTreeRed01
+  id: FloraTreeRed04
+  name: Дерево
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Decoration/Flora/flora_trees_red/flora_trees.rsi
+    state: tree04
+
+
+- type: entity
+  parent: FloraTreeRed01
+  id: FloraTreeRed05
+  name: Дерево
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Decoration/Flora/flora_trees_red/flora_trees.rsi
+    state: tree05
+
+
+- type: entity
+  parent: FloraTreeRed01
+  id: FloraTreeRed06
+  name: Дерево
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Decoration/Flora/flora_trees_red/flora_trees.rsi
+    state: tree06
+
+
+- type: entity
+  parent: FloraTreeRed01
+  id: FloraTreeLargeRed01
+  name: Дерево
+  suffix: ST, Mapping
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Decoration/Flora/flora_trees_red/flora_treeslarge.rsi
+    state: treelarge01
+
+- type: entity
+  parent: FloraTreeLargeRed01
+  id: FloraTreeLargeRed02
+  name: Дерево
+  suffix: ST, Mapping
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Decoration/Flora/flora_trees_red/flora_treeslarge.rsi
+    state: treelarge02
+
+
+- type: entity
+  parent: FloraTreeLargeRed01
+  id: FloraTreeLargeRed03
+  name: Дерево
+  suffix: ST, Mapping
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Decoration/Flora/flora_trees_red/flora_treeslarge.rsi
+    state: treelarge03
+
+
+- type: entity
+  parent: FloraTreeLargeRed01
+  id: FloraTreeLargeRed04
+  name: Дерево
+  suffix: ST, Mapping
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Decoration/Flora/flora_trees_red/flora_treeslarge.rsi
+    state: treelarge04
+
+
+- type: entity
+  parent: FloraTreeLargeRed01
+  id: FloraTreeLargeRed05
+  name: Дерево
+  suffix: ST, Mapping
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Decoration/Flora/flora_trees_red/flora_treeslarge.rsi
+    state: treelarge05
+
+
+- type: entity
+  parent: FloraTreeLargeRed01
+  id: FloraTreeLargeRed06
+  name: Дерево
+  suffix: ST, Mapping
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Decoration/Flora/flora_trees_red/flora_treeslarge.rsi
+    state: treelarge06
+
+- type: entity
+  parent: BaseTreeLarge
+  id: FloraTreeWillow01
+  name: Дерево
+  suffix: ST, Mapping
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Decoration/Flora/flora_tree_willow.rsi
+    state: treewillow01
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 750
+      behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 700
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/tree_fell.ogg
+          params:
+            volume: 5
+            variation: 0.05
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          STLogStalkerT4:
+            min: 1
+            max: 2
+
+# КАМНИ
+# moved to _Stalker
+- type: entity
+  id: STBaseRock
+  parent: BaseRock
+  suffix: ST, Mapping
+  abstract: true
+  components:
+  - type: Sprite
+    noRot: true
+    sprite: _Stalker/Objects/Decoration/Flora/flora_rockssolid.rsi
+
+- type: entity
+  parent: STBaseRock
+  id: STFloraRockSolid01
+  components:
+  - type: Sprite
+    state: rocksolid01
+
+- type: entity
+  parent: STBaseRock
+  id: STFloraRockSolid02
+  components:
+  - type: Sprite
+    state: rocksolid02
+
+- type: entity
+  parent: STBaseRock
+  id: STFloraRockSolid03
+  components:
+  - type: Sprite
+    state: rocksolid03
+
+# ДУБ small
+# moved to _Stalker
+
+- type: entity
+  id: STBaseTree
+  description: Yep, it's a tree.
+  parent: BaseTree
+  suffix: ST, Mapping
+  noSpawn: true
+  # abstract: true
+  components:
+  - type: Sprite
+    noRot: true
+    sprite: _Stalker/Objects/Decoration/Flora/flora_trees.rsi
+    drawdepth: Overdoors
+    offset: 0,0.9
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 750
+      behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 700
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/tree_fell.ogg
+          params:
+            volume: 5
+            variation: 0.05
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          STLogStalkerT1:
+            min: 1
+            max: 2
+
+- type: entity
+  parent: STBaseTree
+  id: STFloraTree01
+  name: tree
+  components:
+  - type: Sprite
+    state: tree01
+
+- type: entity
+  parent: STBaseTree
+  id: STFloraTree02
+  name: tree
+  components:
+  - type: Sprite
+    state: tree02
+
+- type: entity
+  parent: STBaseTree
+  id: STFloraTree03
+  name: tree
+  components:
+  - type: Sprite
+    state: tree03
+
+- type: entity
+  parent: STBaseTree
+  id: STFloraTree04
+  name: tree
+  components:
+  - type: Sprite
+    state: tree04
+
+- type: entity
+  parent: STBaseTree
+  id: STFloraTree05
+  name: tree
+  components:
+  - type: Sprite
+    state: tree05
+
+- type: entity
+  parent: STBaseTree
+  id: STFloraTree06
+  name: tree
+  components:
+  - type: Sprite
+    state: tree06
+
+# Large
+
+- type: entity
+  parent: STBaseTree
+  id: STBaseTreeLarge
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Decoration/Flora/flora_treeslarge.rsi
+    offset: 0,1.55
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.18,-0.35,0.18,0.35"
+        density: 2000
+        layer:
+        - WallLayer
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 750
+      behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 700
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/tree_fell.ogg
+          params:
+            volume: 5
+            variation: 0.05
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          STLogStalkerT1:
+            min: 1
+            max: 2
+
+- type: entity
+  parent: STBaseTreeLarge
+  id: STFloraTreeLarge01
+  name: large tree
+  components:
+  - type: Sprite
+    state: treelarge01
+
+- type: entity
+  parent: STBaseTreeLarge
+  id: STFloraTreeLarge02
+  name: large tree
+  components:
+  - type: Sprite
+    state: treelarge02
+
+- type: entity
+  parent: STBaseTreeLarge
+  id: STFloraTreeLarge03
+  name: large tree
+  components:
+  - type: Sprite
+    state: treelarge03
+
+- type: entity
+  parent: STBaseTreeLarge
+  id: STFloraTreeLarge04
+  name: large tree
+  components:
+  - type: Sprite
+    state: treelarge04
+
+- type: entity
+  parent: STBaseTreeLarge
+  id: STFloraTreeLarge05
+  name: large tree
+  components:
+  - type: Sprite
+    state: treelarge05
+
+- type: entity
+  parent: STBaseTreeLarge
+  id: STFloraTreeLarge06
+  name: large tree
+  components:
+  - type: Sprite
+    state: treelarge06

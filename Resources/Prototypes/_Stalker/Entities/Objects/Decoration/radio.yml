@@ -1,0 +1,101 @@
+# # ПЕРЕНОСНОЙ ПЛЕЕР
+
+# - type: entity
+#   parent: BaseItem
+#   id: RadioStalkerPlayer
+#   name: кассетный плеер
+#   suffix: ST, переносной
+#   description: Кассетный плеер, представленный в 1983 году и выполненный в ультракомпактном корпусе, который по габаритам меньше даже самой аудиокассеты. Это стало возможным за счёт раздвижной конструкции, что и позволяло установить внутрь кассету.
+#   components:
+#   - type: ItemSlots
+#     slots:
+#       cassette_slot:
+#         name: Cassete
+#         whitelist:
+#           tags:
+#             - Cassete
+#   - type: Sprite
+#     sprite: _Stalker/Objects/Devices/mp3player.rsi
+#     state: base
+
+# - type: entity
+#   id: RadioStandStalkerIgorIvanovichTheme
+#   parent: RadioBaseStalker
+#   suffix: ST, IgorIvanovichTheme
+#   components:
+#   - type: AmbientSound
+#     volume: 1
+#     enabled: true
+#     sound:
+#       path: /Audio/_Stalker/Music/Radio/wolf_hunt.ogg
+
+
+
+
+
+# СТАТИЧЕСКОЕ РАДИО
+
+- type: entity
+  id: RadioBaseStalker
+  parent: BaseStructure
+  name: радио
+  suffix: Stalker, без музыки
+  description: Первая беспроводная связь. Носителем сигнала являются радиоволны, распространяющиеся в пространстве.
+  abstract: true
+  components:
+  - type: AmbientSound
+    volume: -16
+    range: 6
+    enabled: true
+    sound:
+      path: /Audio/_Stalker/esttolkomig.ogg
+  - type: Sprite
+    sprite: _Stalker/Objects/Decoration/Other/radio.rsi
+    state: base
+  - type: InteractionOutline
+  - type: Physics
+    bodyType: Static
+  - type: Transform
+    noRot: true
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.08,-0.08,0.08,0.08"
+        mask:
+        - TabletopMachineMask
+        layer:
+        - TabletopMachineLayer
+        density: 200
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Breakage"]
+      - !type:EjectVendorItems
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/metal_break1.ogg
+  - type: Anchorable
+  - type: Appearance
+
+- type: entity
+  id: RadioStalkerMig
+  parent: RadioBaseStalker
+  suffix: Stalker, есть только миг
+  components:
+  - type: AmbientSound
+    enabled: true
+    sound:
+      path: /Audio/_Stalker/esttolkomig.ogg
+

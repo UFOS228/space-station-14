@@ -1,0 +1,13 @@
+- type: entity
+  id: StalkerMonolitBornFire
+  parent: Bonfire
+  name: алтарь
+  suffix: ST, Mapping
+  description: Алтарь богов..
+  components:
+  - type: Sprite
+    sprite: _Stalker/Objects/Decoration/bonfire.rsi
+    scale: 1.2, 1.2
+    layers:
+      - state: Monolit
+      - state: MonolitFire
