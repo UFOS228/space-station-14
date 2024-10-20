@@ -1,9 +1,9 @@
 - type: entity
-  name: BunkBed
+  name: Двух-этажная кровать
   id: BunkBed
   suffix: "Metro Decoration"
   parent: Bed
-  description: This is used to lie in, sleep in or strap on. Resting here provides extremely slow healing.
+  description: Более компактно, чем одна.
   components:
   - type: Sprite
     sprite: UFOS/Structures/furniture.rsi

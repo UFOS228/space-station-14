@@ -2,8 +2,8 @@
   parent: [ClothingOuterStorageBase, AllowSuitStorageClothing, ClothingOuterArmorBasic]
   id: ClothingOuterCoatBomberArmored
   suffix: "Metro Clothing"
-  name: bomber jacket armored
-  description: A thick, well-worn WW2 leather bomber jacket.
+  name: бронированная куртка-бомбер
+  description: Старая, но удобная куртка. Теперь бронированная.
   components:
   - type: Sprite
     sprite: Clothing/OuterClothing/Coats/bomber.rsi

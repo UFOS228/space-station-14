@@ -2,8 +2,8 @@
   name: small-flashlight
   parent: FlashlightLantern
   suffix: Metro device
-  id: SmallFlashlight
-  description: It lights the way to freedom.
+  id: малый фонарик
+  description: Освещает путь
   components:
   - type: LightBehaviour
     behaviours:

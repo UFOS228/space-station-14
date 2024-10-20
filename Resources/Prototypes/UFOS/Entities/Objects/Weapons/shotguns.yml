@@ -1,9 +1,9 @@
 - type: entity
-  name: Uboinik
+  name: Убойник
   parent: [BaseWeaponShotgun, BaseGunWieldable, BaseWeaponClothing, SpeedModifierBigGun]
   id: WeaponShotgunUboinik
   suffix: "Metro Guns"
-  description: Uses .50 shotgun shells.
+  description: Точный скорострельный дробовик, великолепен как на средней дистанции, так и в ближнем бою, однако перезарядка его занимает довольно много времени.
   components:
   - type: Item
     size: Large
@@ -45,11 +45,11 @@
 
 
 - type: entity
-  name: improvised shotgun
+  name: одноствольный дробовик
   parent: [BaseWeaponShotgun, BaseGunWieldable, BaseWeaponClothing, SpeedModifierBigGun]
   id: WeaponShotgunImprovised
   suffix: "Metro Guns"
-  description: Bad gun. But more than nothing.
+  description: Ужасное, слепленое на коленке оружие. Произведён непонятно где и кем. Дешевле оружия просто не найти.  
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Shotguns/improvised_shotgun.rsi
@@ -73,7 +73,7 @@
     price: 20
 
 - type: entity
-  name: improvised shotgun
+  name: одноствольный дробовик
   parent: WeaponShotgunImprovised
   suffix: Loaded, Metro Guns
   id: WeaponShotgunImprovisedLoaded

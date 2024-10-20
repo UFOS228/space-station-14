@@ -49,11 +49,11 @@
     price: 500
 
 - type: entity
-  name: double-barreled shotgun
+  name: дуплет
+  description: Двустволка 12-го калибра – один из лучших видов оружия ближнего боя. Залп двух её стволов может уложить на месте практически любого мутанта.
   suffix: "Metro Guns"
   parent: [BaseWeaponRevShotgun, BaseGunWieldable, BaseWeaponClothing, SpeedModifierMediumGun]
   id: WeaponShotgunDoubleBarrel
-  description: An immortal classic. Uses .50 shotgun shells.
   components:
   - type: Sprite
     sprite: UFOS/Objects/Weapons/db_shotgun.rsi
@@ -84,11 +84,11 @@
     deconstructionTarget: null
 
 - type: entity
-  name: four-barreled shotgun
+  name: чётырёх-стволка
   suffix: "Metro Guns"
   parent: [BaseWeaponRevShotgun, BaseGunWieldable, BaseWeaponClothing, SpeedModifierBigGun]
   id: WeaponShotgunFourBarrel
-  description: YEAH! Uses .50 shotgun shells.
+  description: Убойная штука! Как дуплет, только в два раза круче.
   components:
   - type: Sprite
     sprite: UFOS/Objects/Weapons/fb_shotgun.rsi

@@ -1,6 +1,7 @@
 - type: entity
   id: CartridgeRifleArmy
-  name: cartridge (.45 army)
+  name: Армейский патрон 5.45
+  description: Очень ценный патрон. Используется как валюта.
   suffix: Metro Ammo
   parent: BaseCartridgeLightRifle
   components:
@@ -27,7 +28,7 @@
 
 - type: entity
   id: MagazineLightRifleArmy
-  name: "magazine (.45 rifle army)"
+  name: "магазин Армейских патронов 5.45"
   suffix: Metro Ammo
   parent: MagazineLightRifle
   components:

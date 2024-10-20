@@ -1,9 +1,9 @@
 - type: entity
-  name: Kalash
+  name: Калаш
   suffix: "Metro Guns"
   parent: [BaseWeaponRifle, BaseWeaponClothing, SpeedModifierBigGun, LightScope]
   id: WeaponRifleAkMetro
-  description: An iconic weapon of war. Uses .30 rifle ammo.
+  description: Короче, помоги добраться до Сухаревской, а я тебе «калаш» за это.
   components:
   - type: Sprite
     sprite: UFOS/Objects/Weapons/ak.rsi

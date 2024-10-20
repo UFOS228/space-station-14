@@ -1,46 +1,46 @@
-- type: entity
-  parent: MaterialBase
-  id: MetroAmmo
-  name: "5.45 ammo"
-  suffix: Full
-  components:
-  - type: Item
-    sprite: /Textures/UFOS/Objects/Materials/ammo.rsi
-  - type: Material
-  - type: PhysicalComposition
-    materialComposition:
-      MetroAmmo: 100
-  - type: Stack
-    stackType: MetroAmmo
-    baseLayer: base
-    layerStates:
-    - ammo1
-    - ammo2
-    - ammo3
-  - type: Sprite
-    sprite: /Textures/UFOS/Objects/Materials/ammo.rsi
-    state: ammo3
-    layers:
-    - state: ammo3
-      map: ["base"]
-  - type: Appearance
-  - type: Extractable
-    grindableSolutionName: ammo
+# - type: entity
+#   parent: MaterialBase
+#   id: MetroAmmo
+#   name: "5.45 патрон"
+#   suffix: Full
+#   components:
+#   - type: Item
+#     sprite: /Textures/UFOS/Objects/Materials/ammo.rsi
+#   - type: Material
+#   - type: PhysicalComposition
+#     materialComposition:
+#       MetroAmmo: 100
+#   - type: Stack
+#     stackType: MetroAmmo
+#     baseLayer: base
+#     layerStates:
+#     - ammo1
+#     - ammo2
+#     - ammo3
+#   - type: Sprite
+#     sprite: /Textures/UFOS/Objects/Materials/ammo.rsi
+#     state: ammo3
+#     layers:
+#     - state: ammo3
+#       map: ["base"]
+#   - type: Appearance
+#   - type: Extractable
+#     grindableSolutionName: ammo
 
-- type: entity
-  parent: MetroAmmo
-  id: MetroAmmo1
-  suffix: Single
-  components:
-  - type: Sprite
-    state: ammo
-  - type: Stack
-    count: 1
+# - type: entity
+#   parent: MetroAmmo
+#   id: MetroAmmo1
+#   suffix: Single
+#   components:
+#   - type: Sprite
+#     state: ammo
+#   - type: Stack
+#     count: 1
 
 
-- type: stack
-  id: MetroAmmo
-  name: "5.45 ammo"
-  icon: { sprite: /Textures/UFOS/Objects/Materials/ammo.rsi, state: ammo1 }
-  spawn: MetroAmmo1
-  maxCount: 30
+# - type: stack
+#   id: MetroAmmo
+#   name: "5.45 ammo"
+#   icon: { sprite: /Textures/UFOS/Objects/Materials/ammo.rsi, state: ammo1 }
+#   spawn: MetroAmmo1
+#   maxCount: 30

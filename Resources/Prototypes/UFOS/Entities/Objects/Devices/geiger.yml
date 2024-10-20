@@ -1,9 +1,9 @@
 - type: entity
   parent: BaseItem
   id: MetroGeiger
-  name: Geiger
+  name: счётчик Гейгера
   suffix: Metro device
-  description: A handheld device used for detecting and measuring radiation pulses.
+  description: Ручной прибор, способный измерять радиацию рядом.
   components:
     - type: Sprite
       sprite: Objects/Tools/geiger.rsi

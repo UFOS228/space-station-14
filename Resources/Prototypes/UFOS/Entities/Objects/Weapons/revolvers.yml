@@ -1,9 +1,9 @@
 - type: entity
-  name: Revolver
+  name: Револьвер
   suffix: "Metro Guns"
   parent: [BaseWeaponRevolver, BaseWeaponClothingOnlySoundsPistols, SpeedModifierLightGun]
   id: WeaponRevolverMetro
-  description: Uses .45 magnum ammo.
+  description: Простое, точное и надёжное оружие, производящееся в Метро. Обладает отличным останавливающим действием, но отличается сильной отдачей.
   components:
   - type: Gun
     soundGunshot:
