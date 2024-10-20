@@ -48,6 +48,7 @@
   name: improvised shotgun
   parent: [BaseWeaponShotgun, BaseGunWieldable, BaseWeaponClothing, SpeedModifierBigGun]
   id: WeaponShotgunImprovised
+  suffix: "Metro Guns"
   description: Bad gun. But more than nothing.
   components:
   - type: Sprite
@@ -74,7 +75,7 @@
 - type: entity
   name: improvised shotgun
   parent: WeaponShotgunImprovised
-  suffix: Loaded
+  suffix: Loaded, Metro Guns
   id: WeaponShotgunImprovisedLoaded
   components:
   - type: BallisticAmmoProvider
