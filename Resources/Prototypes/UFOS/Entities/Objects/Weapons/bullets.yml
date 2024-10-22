@@ -2,7 +2,7 @@
   id: CartridgeRifleArmy
   name: Армейский патрон 5.45
   description: Очень ценный патрон. Используется как валюта.
-  suffix: Metro Ammo
+  suffix: Metro Ammo, Currency
   parent: BaseCartridgeLightRifle
   components:
   - type: CartridgeAmmo
@@ -12,6 +12,12 @@
       - AmmoCurrency
       - Cartridge
       - CartridgeLightRifle
+  - type: Sprite
+    sprite: /Textures/UFOS/Objects/Materials/ammo.rsi
+    state: ammo1
+    layers:
+    - state: ammo1
+      map: ["base"]
 
 
 - type: entity
@@ -29,7 +35,7 @@
 - type: entity
   id: MagazineLightRifleArmy
   name: "магазин Армейских патронов 5.45"
-  suffix: Metro Ammo
+  suffix: Metro Ammo, Currency
   parent: MagazineLightRifle
   components:
   - type: BallisticAmmoProvider
