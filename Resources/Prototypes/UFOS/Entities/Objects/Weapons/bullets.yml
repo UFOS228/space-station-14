@@ -14,9 +14,9 @@
       - CartridgeLightRifle
   - type: Sprite
     sprite: /Textures/UFOS/Objects/Materials/ammo.rsi
-    state: ammo1
+    state: base
     layers:
-    - state: ammo1
+    - state: base
       map: ["base"]
 
 

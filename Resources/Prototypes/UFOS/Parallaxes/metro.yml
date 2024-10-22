@@ -3,6 +3,6 @@
   layers:
     - texture:
         !type:ImageParallaxTextureSource
-        path: "/Textures/Tiles/dirt.png"
-      slowness: 1
+        path: "/Textures/UFOS/Parallaxes/dirt.png"
+      slowness: 0
       scale: "1, 1"
