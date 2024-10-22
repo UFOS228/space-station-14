@@ -1,0 +1,8 @@
+- type: parallax
+  id: Metro
+  layers:
+    - texture:
+        !type:ImageParallaxTextureSource
+        path: "/Textures/Tiles/dirt.png"
+      slowness: 1
+      scale: "1, 1"
