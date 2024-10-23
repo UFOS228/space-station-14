@@ -674,16 +674,16 @@ entities:
           id: docking79775
           localAnchorB: 0.5,1
           localAnchorA: -2.5,-115
-          damping: 376.19073
-          stiffness: 3376.6802
+          damping: 2008.4292
+          stiffness: 18027.62
         docking79771: !type:WeldJoint
           bodyB: 4032
           bodyA: 2
           id: docking79771
           localAnchorB: -9.5,1
           localAnchorA: -12.5,-115
-          damping: 376.19073
-          stiffness: 3376.6802
+          damping: 2008.4292
+          stiffness: 18027.62
   - uid: 3
     components:
     - type: MetaData
@@ -12909,6 +12909,56 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
+- proto: MetroSndWaterCave
+  entities:
+  - uid: 4342
+    components:
+    - type: Transform
+      pos: 13.949545,9.535701
+      parent: 2
+- proto: MetroSndWaterDripping
+  entities:
+  - uid: 4337
+    components:
+    - type: Transform
+      pos: -4.0464,-48.34321
+      parent: 2
+- proto: MetroSndWaterDrippingJail
+  entities:
+  - uid: 4341
+    components:
+    - type: Transform
+      pos: 5.3932943,-34.65686
+      parent: 2
+- proto: MetroSndWaterfall
+  entities:
+  - uid: 4339
+    components:
+    - type: Transform
+      pos: -22.852192,-32.31382
+      parent: 2
+  - uid: 4340
+    components:
+    - type: Transform
+      pos: -19.748707,-17.13459
+      parent: 2
+  - uid: 4343
+    components:
+    - type: Transform
+      pos: -6.9774942,25.499197
+      parent: 2
+  - uid: 4344
+    components:
+    - type: Transform
+      pos: 16.863007,16.085398
+      parent: 2
+- proto: MetroSndWaterFalling
+  entities:
+  - uid: 4338
+    components:
+    - type: Transform
+      pos: -2.88126,-41.011284
+      parent: 2
 - proto: MetroWallet
   entities:
   - uid: 3555

@@ -1,0 +1,17 @@
+- type: entity
+  abstract: True
+  id: BaseMetroAmbientSnd
+  name: BaseMetroAmbientSnd
+  description: Damn
+  components:
+  - type: Marker
+  - type: Sprite
+    drawdepth: Overdoors
+    sprite: UFOS/markers.rsi
+    layers:
+      - state: snd
+  - type: AmbientSound
+    volume: -9
+    range: 15
+    sound:
+      path: /Audio/UFOS/Ambience/cave1.ogg

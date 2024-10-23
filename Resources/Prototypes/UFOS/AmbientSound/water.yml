@@ -1,0 +1,105 @@
+- type: entity
+  id: MetroSndWaterRain
+  suffix: Metro Deco
+  parent: BaseMetroAmbientSnd
+  name: Звук Вода Лёгкий дождь
+  components:
+  - type: AmbientSound
+    range: 10
+    sound:
+      path: /Audio/UFOS/Ambience/Water/rain_light_loop.ogg
+
+- type: entity
+  id: MetroSndWaterTube
+  suffix: Metro Deco
+  parent: BaseMetroAmbientSnd
+  name: Звук Вода Труба
+  components:
+  - type: AmbientSound
+    volume: -13
+    range: 9
+    sound:
+      path: /Audio/UFOS/Ambience/Water/water_tube.ogg
+
+- type: entity
+  id: MetroSndWaterCave
+  suffix: Metro Deco
+  parent: BaseMetroAmbientSnd
+  name: Звук Вода Пещера
+  components:
+  - type: AmbientSound
+    range: 9
+    sound:
+      path: /Audio/UFOS/Ambience/Water/water_cave_01.ogg
+
+- type: entity
+  id: MetroSndWaterDrippingJail
+  suffix: Metro Deco
+  parent: BaseMetroAmbientSnd
+  name: Звук Вода Капли Тюрьма
+  components:
+  - type: AmbientSound
+    range: 6
+    sound:
+      path: /Audio/UFOS/Ambience/Water/water_jailhouse_dripping.ogg
+
+- type: entity
+  id: MetroSndWaterDripping
+  suffix: Metro Deco
+  parent: BaseMetroAmbientSnd
+  name: Звук Вода Капли
+  components:
+  - type: AmbientSound
+    range: 6
+    sound:
+      collection: MetroSndWaterDrippingCol
+
+- type: soundCollection
+  id: MetroSndWaterDrippingCol
+  files:
+  - /Audio/UFOS/Ambience/Water/water_dripping_fast_1.ogg
+  - /Audio/UFOS/Ambience/Water/water_dripping_fast_2.ogg
+  - /Audio/UFOS/Ambience/Water/water_dripping_fast_3.ogg
+  - /Audio/UFOS/Ambience/Water/water_dripping_fast_4.ogg
+  - /Audio/UFOS/Ambience/Water/water_dripping_high_1.ogg
+  - /Audio/UFOS/Ambience/Water/water_dripping_high_2.ogg
+  - /Audio/UFOS/Ambience/Water/water_dripping_high_3.ogg
+  - /Audio/UFOS/Ambience/Water/water_dripping_high_4.ogg
+
+- type: entity
+  id: MetroSndWaterFalling
+  suffix: Metro Deco
+  parent: BaseMetroAmbientSnd
+  name: Звук Вода Выливается
+  components:
+  - type: AmbientSound
+    range: 6
+    sound:
+      collection: MetroSndWaterFallingCol
+
+- type: soundCollection
+  id: MetroSndWaterFallingCol
+  files:
+  - /Audio/UFOS/Ambience/Water/water_falling_hard_1.ogg
+  - /Audio/UFOS/Ambience/Water/water_falling_hard_2.ogg
+  - /Audio/UFOS/Ambience/Water/water_falling_hard_3.ogg
+  - /Audio/UFOS/Ambience/Water/water_falling_hard_4.ogg
+
+
+- type: entity
+  id: MetroSndWaterfall
+  suffix: Metro Deco
+  parent: BaseMetroAmbientSnd
+  name: Звук Вода Подземная река
+  components:
+  - type: AmbientSound
+    range: 10
+    sound:
+      collection: MetroSndWaterfallCol
+
+- type: soundCollection
+  id: MetroSndWaterfallCol
+  files:
+  - /Audio/UFOS/Ambience/Water/tun_waterfall_1.ogg
+  - /Audio/UFOS/Ambience/Water/tun_waterfall_2.ogg
+  - /Audio/UFOS/Ambience/Water/tun_waterfall_3.ogg
