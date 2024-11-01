@@ -1,14 +1,20 @@
 {
-    "version": 1,
-    "license": "CC-BY-SA-3.0",
-    "copyright": "Made by discord:xcenlegend for Corvax Stalker14",
-    "size": {
-        "x": 32,
-        "y": 32
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Made by discord:xcenlegend for Corvax Stalker14",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "base"
     },
-    "states": [
-        {
-            "name": "base"
-        }
-    ]
+    {
+      "name": "o-2"
+    },
+    {
+      "name": "o-1"
+    }
+  ]
 }

@@ -1,15 +1,15 @@
 - type: entity
-  id: BaseCartridgeMagnum
-  name: cartridge (.45 magnum)
+  id: BaseCartridgeLightRifle
+  name: патрон 5.45x39
   parent: [ BaseCartridge, BaseRestrictedContraband ]
   abstract: true
   components:
   - type: Tag
     tags:
-      - Cartridge
-      - CartridgeMagnum
+    - Cartridge
+    - CartridgeLightRifle
   - type: CartridgeAmmo
-    proto: BulletMagnum
+    proto: BulletLightRifle
   - type: Sprite
     sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
     layers:
@@ -19,20 +19,22 @@
   - type: SpentAmmoVisuals
 
 - type: entity
-  id: CartridgeMagnum
-  name: cartridge (.45 magnum)
-  parent: BaseCartridgeMagnum
+  suffix: Metro Ammo
+  id: CartridgeLightRifle
+  name: патрон 5.45x39
+  parent: BaseCartridgeLightRifle
   components:
   - type: CartridgeAmmo
-    proto: BulletMagnum
+    proto: BulletLightRifle
 
 - type: entity
-  id: CartridgeMagnumPractice
-  name: cartridge (.45 magnum practice)
-  parent: BaseCartridgeMagnum
+  suffix: Metro Ammo
+  id: CartridgeLightRiflePractice
+  name: патрон 5.45x39 резиновый
+  parent: BaseCartridgeLightRifle
   components:
   - type: CartridgeAmmo
-    proto: BulletMagnumPractice
+    proto: BulletLightRiflePractice
   - type: Sprite
     layers:
       - state: base
@@ -42,12 +44,13 @@
         color: "#dbdbdb"
 
 - type: entity
-  id: CartridgeMagnumIncendiary
-  name: cartridge (.45 magnum incendiary)
-  parent: BaseCartridgeMagnum
+  suffix: Metro Ammo
+  id: CartridgeLightRifleIncendiary
+  name: патрон 5.45x39 зажигательный
+  parent: BaseCartridgeLightRifle
   components:
   - type: CartridgeAmmo
-    proto: BulletMagnumIncendiary
+    proto: BulletLightRifleIncendiary
   - type: Sprite
     layers:
       - state: base
@@ -57,27 +60,13 @@
         color: "#ff6e52"
 
 - type: entity
-  id: CartridgeMagnumAP
-  name: cartridge (.45 magnum armor-piercing)
-  parent: BaseCartridgeMagnum
+  suffix: Metro Ammo
+  id: CartridgeLightRifleUranium
+  name: патрон 5.45x39 урановый
+  parent: BaseCartridgeLightRifle
   components:
   - type: CartridgeAmmo
-    proto: BulletMagnumAP
-  - type: Sprite
-    layers:
-      - state: base
-        map: [ "enum.AmmoVisualLayers.Base" ]
-      - state: tip
-        map: [ "enum.AmmoVisualLayers.Tip" ]
-        color: "#0a0a0a"
-
-- type: entity
-  id: CartridgeMagnumUranium
-  name: cartridge (.45 magnum uranium)
-  parent: BaseCartridgeMagnum
-  components:
-  - type: CartridgeAmmo
-    proto: BulletMagnumUranium
+    proto: BulletLightRifleUranium
   - type: Sprite
     layers:
       - state: base
@@ -85,4 +74,3 @@
       - state: tip
         map: [ "enum.AmmoVisualLayers.Tip" ]
         color: "#65fe08"
-

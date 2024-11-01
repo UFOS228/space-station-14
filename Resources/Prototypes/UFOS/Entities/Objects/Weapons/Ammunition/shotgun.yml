@@ -1,6 +1,6 @@
 - type: entity
   id: BaseShellShotgun
-  name: shell (.50)
+  name: картечь 12х70
   parent: [ BaseCartridge, BaseRestrictedContraband ]
   abstract: true
   components:
@@ -20,8 +20,9 @@
   - type: SpentAmmoVisuals
 
 - type: entity
+  suffix: Metro Ammo
   id: ShellShotgunBeanbag
-  name: shell (.50 beanbag)
+  name: картечь 12х70 резиновая пуля
   parent: BaseShellShotgun
   components:
   - type: Sprite
@@ -34,8 +35,9 @@
     state: "beanbag"
 
 - type: entity
+  suffix: Metro Ammo
   id: ShellShotgunSlug
-  name: shell (.50 slug)
+  name: картечь 12х70 пуля
   parent: BaseShellShotgun
   components:
   - type: Sprite
@@ -48,8 +50,9 @@
     state: "slug"
 
 - type: entity
+  suffix: Metro Ammo
   id: ShellShotgunFlare
-  name: shell (.50 flare)
+  name: картечь 12х70 сигнальная
   parent: BaseShellShotgun
   components:
   - type: Sprite
@@ -62,8 +65,9 @@
     state: "flare"
 
 - type: entity
+  suffix: Metro Ammo
   id: ShellShotgun
-  name: shell (.50)
+  name: картечь 12х70
   parent: BaseShellShotgun
   components:
   - type: Sprite
@@ -74,8 +78,9 @@
     proto: PelletShotgunSpread
 
 - type: entity
+  suffix: Metro Ammo
   id: ShellShotgunIncendiary
-  name: shell (.50 incendiary)
+  name: картечь 12х70 зажигательная
   parent: BaseShellShotgun
   components:
   - type: Sprite
@@ -88,8 +93,9 @@
     state: "incendiary"
 
 - type: entity
+  suffix: Metro Ammo
   id: ShellShotgunPractice
-  name: shell (.50 practice)
+  name: картечь 12х70 резиновая
   parent: BaseShellShotgun
   components:
   - type: Sprite
@@ -102,8 +108,9 @@
     state: "practice"
 
 - type: entity
+  suffix: Metro Ammo
   id: ShellTranquilizer
-  name: shell (.50 tranquilizer)
+  name: картечь 12х70 транквилизатор
   parent: BaseShellShotgun
   components:
   - type: Sprite
@@ -143,8 +150,9 @@
     state: "improvised"
 
 - type: entity
+  suffix: Metro Ammo
   id: ShellShotgunUranium
-  name: uranium shotgun shell
+  name: картечь 12х70 урановая
   parent: BaseShellShotgun
   components:
     - type: Sprite

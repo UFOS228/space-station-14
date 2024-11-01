@@ -1,6 +1,6 @@
 - type: entity
   id: CartridgeRifleArmy
-  name: Армейский патрон 5.45
+  name: Армейский патрон 5.45x39
   description: Очень ценный патрон. Используется как валюта.
   suffix: Metro Ammo, Currency
   parent: BaseCartridgeLightRifle
@@ -13,16 +13,16 @@
       - Cartridge
       - CartridgeLightRifle
   - type: Sprite
-    sprite: /Textures/UFOS/Objects/Materials/ammo.rsi
-    state: base
+    sprite: /Textures/UFOS/Objects/Materials/armyammo.rsi
     layers:
     - state: base
-      map: ["base"]
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: SpentAmmoVisuals
 
 
 - type: entity
   id: ProjectileArmy
-  name: proj 5.45 army bullet
+  name: proj 5.45x39 army bullet
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:
@@ -34,7 +34,7 @@
 
 - type: entity
   id: MagazineLightRifleArmy
-  name: "магазин Армейских патронов 5.45"
+  name: "магазин Армейских патронов 5.45x39"
   suffix: Metro Ammo, Currency
   parent: MagazineLightRifle
   components:

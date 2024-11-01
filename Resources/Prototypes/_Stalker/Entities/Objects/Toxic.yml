@@ -1,0 +1,96 @@
+- type: entity
+  id: MetroPoisonShroom
+  suffix: Metro Deco
+  name: светящиеся грибы
+  description: Светящиеся грибы в метро - обычное дело. Не стоит попробовать их.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Environment/poison_shrooms.rsi
+      state: o-1
+    - type: RadiationSource
+      slope: 0.7
+      intensity: 0.2
+    - type: Clickable
+    - type: Damageable
+      damageContainer: StructuralInorganic
+      damageModifierSet: Wood
+    - type: MeleeSound
+      soundGroups:
+        Brute:
+          path: /Audio/Effects/toss.ogg
+          params:
+            variation: 0.05
+    - type: Destructible
+      thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 10
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+      - trigger:
+          !type:DamageTrigger
+          damage: 5
+        behaviors:
+        - !type:PlaySoundBehavior
+          sound:
+            path: /Audio/Effects/chopstickbreak.ogg
+            params:
+              volume: 1
+              variation: 0.05
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+        # - !type:SpawnEntitiesBehavior
+        #   spawn:
+        #     Log:
+        #       min: 2
+        #       max: 8
+    - type: PointLight
+      color: "#7CB342"
+      energy: 0.8
+      radius: 1.5
+      castShadows: false
+
+
+- type: entity
+  id: MetroPoisonShroom2
+  suffix: Metro Deco
+  parent: MetroPoisonShroom
+  name: светящиеся грибы
+  description: Светящиеся грибы в метро - обычное дело. Не стоит попробовать их.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Environment/poison_shrooms.rsi
+      state: o-2
+
+
+
+- type: entity
+  id: MetroPoisonShroomBright
+  suffix: Metro Deco, Яркий
+  parent: MetroPoisonShroom
+  name: светящиеся грибы
+  description: Светящиеся грибы в метро - обычное дело. Не стоит попробовать их.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Environment/poison_shrooms.rsi
+      state: o-1
+    - type: PointLight
+      color: "#7CB342"
+      energy: 1.6
+      radius: 1.7
+      castShadows: false
+    - type: RadiationSource
+      slope: 0.7
+      intensity: 0.4
+
+- type: entity
+  id: MetroPoisonShroomBright2
+  suffix: Metro Deco, Яркий
+  parent: MetroPoisonShroomBright
+  name: светящиеся грибы
+  description: Светящиеся грибы в метро - обычное дело. Не стоит попробовать их.
+  components:
+    - type: Sprite
+      sprite: _Stalker/Objects/Environment/poison_shrooms.rsi
+      state: o-2
