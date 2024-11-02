@@ -1,5 +1,41 @@
 - type: hudTheme
+  id: SS14DefaultTheme
+  name: MetroTheme
+  path: /Textures/_Stalker/Interface/STDefault/
+  order: -1
+
+- type: hudTheme
   id: SS14PlasmafireTheme
   name: ui-options-hud-theme-plasmafire
-  path: Plasmafire
-  order: -1
+  path: /Textures/_Stalker/Interface/STDefault/
+  order: 3
+
+- type: hudTheme
+  id: SS14SlimecoreTheme
+  name: ui-options-hud-theme-slimecore
+  path: /Textures/_Stalker/Interface/STDefault/
+  order: 2
+
+- type: hudTheme
+  id: SS14ClockworkTheme
+  name: ui-options-hud-theme-clockwork
+  path: /Textures/_Stalker/Interface/STDefault/
+  order: 4
+
+- type: hudTheme
+  id: SS14RetroTheme
+  name: ui-options-hud-theme-retro
+  path: /Textures/_Stalker/Interface/STDefault/
+  order: 6
+
+- type: hudTheme
+  id: SS14MinimalistTheme
+  name: ui-options-hud-theme-minimalist
+  path: /Textures/_Stalker/Interface/STDefault/
+  order: 1
+
+- type: hudTheme
+  id: SS14AshenTheme
+  name: ui-options-hud-theme-ashen
+  path: /Textures/_Stalker/Interface/STDefault/
+  order: 5

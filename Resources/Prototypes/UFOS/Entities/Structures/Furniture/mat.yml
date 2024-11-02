@@ -1,0 +1,45 @@
+- type: entity
+  parent: [SeatBase, BaseDeployFoldable]
+  id: MatFolding
+  name: лежанка
+  description: Удобная лежанка, на которой можно передохнуть в любом месте. Её можно удобно сложить, и привязать к рюкзаку
+  suffix: Metro Inventory
+  components:
+  - type: Rotatable
+  - type: Sprite
+    sprite: UFOS/Structures/Furniture/mat.rsi
+    layers:
+    - state: folding
+      map: ["unfoldedLayer"]
+    - state: folding_folded
+      map: ["foldedLayer"]
+      visible: false
+  - type: Item
+    size: Large
+    shape:
+    - 0,0,3,0
+  - type: Appearance
+  # - type: Construction
+  #   graph: Seat
+  #   node: chairFolding
+  - type: DamageExaminable
+  - type: Pullable
+  - type: Strap
+    position: Down
+    rotation: -90
+  - type: HealOnBuckle
+    damage:
+      types:
+        Poison: -0.1
+        Cold: -0.2
+        Blunt: -0.1
+
+- type: entity
+  parent: MatFolding
+  id: MatFoldingFolded
+  suffix: Metro Inventory, Folded
+  components:
+  - type: Foldable
+    folded: true
+  - type: Strap
+    enabled: False
