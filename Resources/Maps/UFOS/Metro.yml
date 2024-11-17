@@ -729,7 +729,7 @@ entities:
     - type: MetaData
       name: Alekseevskaya
     - type: Transform
-      pos: -5.0761476,-110.43938
+      pos: -5.0761476,-110.29123
       parent: 3
     - type: MapGrid
       chunks:
@@ -900,7 +900,7 @@ entities:
           damping: 376.19073
           stiffness: 3376.6802
         docking120554: !type:WeldJoint
-          bodyB: 5221
+          bodyB: 5225
           bodyA: 4032
           id: docking120554
           localAnchorB: 4.5,1
@@ -908,19 +908,19 @@ entities:
           damping: 360.8409
           stiffness: 3238.9004
         docking120547: !type:WeldJoint
-          bodyB: 5221
+          bodyB: 5225
           bodyA: 4032
           id: docking120547
           localAnchorB: -5.5,1
           localAnchorA: -9.5,-106
           damping: 360.8409
           stiffness: 3238.9004
-  - uid: 5221
+  - uid: 5225
     components:
     - type: MetaData
       name: Rijskaya
     - type: Transform
-      pos: -9.079059,-217.46248
+      pos: -9.065161,-217.29593
       parent: 3
     - type: MapGrid
       chunks:
@@ -971,7 +971,7 @@ entities:
     - type: Joint
       joints:
         docking120554: !type:WeldJoint
-          bodyB: 5221
+          bodyB: 5225
           bodyA: 4032
           id: docking120554
           localAnchorB: 4.5,1
@@ -979,7 +979,7 @@ entities:
           damping: 360.8409
           stiffness: 3238.9004
         docking120547: !type:WeldJoint
-          bodyB: 5221
+          bodyB: 5225
           bodyA: 4032
           id: docking120547
           localAnchorB: -5.5,1
@@ -1209,58 +1209,58 @@ entities:
         DockStatus: True
     - type: Door
       changeAirtight: False
-  - uid: 5219
+  - uid: 5220
     components:
     - type: Transform
       pos: -9.5,-105.5
       parent: 4032
     - type: Docking
       dockJointId: docking120547
-      dockedWith: 5223
+      dockedWith: 5227
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: False
         DockStatus: True
     - type: Door
       changeAirtight: False
-  - uid: 5220
+  - uid: 5221
     components:
     - type: Transform
       pos: 0.5,-105.5
       parent: 4032
     - type: Docking
       dockJointId: docking120554
-      dockedWith: 5222
+      dockedWith: 5226
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: False
         DockStatus: True
     - type: Door
       changeAirtight: False
-  - uid: 5222
+  - uid: 5226
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 4.5,0.5
-      parent: 5221
+      parent: 5225
     - type: Docking
       dockJointId: docking120554
-      dockedWith: 5220
+      dockedWith: 5221
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: False
         DockStatus: True
     - type: Door
       changeAirtight: False
-  - uid: 5223
+  - uid: 5227
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: -5.5,0.5
-      parent: 5221
+      parent: 5225
     - type: Docking
       dockJointId: docking120547
-      dockedWith: 5219
+      dockedWith: 5220
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: False
@@ -14864,6 +14864,9 @@ entities:
     - type: Transform
       pos: -4.5,0.5
       parent: 4032
+    - type: Door
+      secondsUntilStateChange: -105.20878
+      state: Opening
 - proto: MopBucketFull
   entities:
   - uid: 562
@@ -19906,6 +19909,26 @@ entities:
     - type: Transform
       pos: -5.5,-108.5
       parent: 2
+  - uid: 5169
+    components:
+    - type: Transform
+      pos: -2.5,-55.5
+      parent: 4032
+  - uid: 5222
+    components:
+    - type: Transform
+      pos: -5.5,-73.5
+      parent: 4032
+  - uid: 5223
+    components:
+    - type: Transform
+      pos: -6.5,-56.5
+      parent: 4032
+  - uid: 5224
+    components:
+    - type: Transform
+      pos: -6.5,-45.5
+      parent: 4032
 - proto: SalvageSpawnerMobShark
   entities:
   - uid: 3455
@@ -24970,301 +24993,301 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -8.5,-52.5
       parent: 4032
-  - uid: 5169
+  - uid: 5170
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -11.5,-83.5
       parent: 4032
-  - uid: 5170
+  - uid: 5171
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -10.5,-83.5
       parent: 4032
-  - uid: 5171
+  - uid: 5172
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -9.5,-83.5
       parent: 4032
-  - uid: 5172
+  - uid: 5173
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -8.5,-83.5
       parent: 4032
-  - uid: 5173
+  - uid: 5174
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -7.5,-83.5
       parent: 4032
-  - uid: 5174
+  - uid: 5175
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -7.5,-84.5
       parent: 4032
-  - uid: 5175
+  - uid: 5176
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -7.5,-85.5
       parent: 4032
-  - uid: 5176
+  - uid: 5177
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -7.5,-86.5
       parent: 4032
-  - uid: 5177
+  - uid: 5178
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -7.5,-87.5
       parent: 4032
-  - uid: 5178
+  - uid: 5179
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -7.5,-88.5
       parent: 4032
-  - uid: 5179
+  - uid: 5180
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -7.5,-89.5
       parent: 4032
-  - uid: 5180
+  - uid: 5181
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -7.5,-90.5
       parent: 4032
-  - uid: 5181
+  - uid: 5182
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -7.5,-91.5
       parent: 4032
-  - uid: 5182
+  - uid: 5183
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -7.5,-92.5
       parent: 4032
-  - uid: 5183
+  - uid: 5184
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -7.5,-93.5
       parent: 4032
-  - uid: 5184
+  - uid: 5185
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -7.5,-95.5
       parent: 4032
-  - uid: 5185
+  - uid: 5186
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -7.5,-96.5
       parent: 4032
-  - uid: 5186
+  - uid: 5187
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -7.5,-94.5
       parent: 4032
-  - uid: 5187
+  - uid: 5188
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -7.5,-98.5
       parent: 4032
-  - uid: 5188
+  - uid: 5189
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -7.5,-97.5
       parent: 4032
-  - uid: 5189
+  - uid: 5190
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -7.5,-100.5
       parent: 4032
-  - uid: 5190
+  - uid: 5191
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -7.5,-101.5
       parent: 4032
-  - uid: 5191
+  - uid: 5192
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -7.5,-99.5
       parent: 4032
-  - uid: 5192
+  - uid: 5193
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -7.5,-102.5
       parent: 4032
-  - uid: 5193
+  - uid: 5194
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -7.5,-103.5
       parent: 4032
-  - uid: 5194
+  - uid: 5195
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -7.5,-105.5
       parent: 4032
-  - uid: 5195
+  - uid: 5196
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -7.5,-104.5
       parent: 4032
-  - uid: 5196
+  - uid: 5197
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -1.5,-105.5
       parent: 4032
-  - uid: 5197
+  - uid: 5198
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -1.5,-104.5
       parent: 4032
-  - uid: 5198
+  - uid: 5199
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -1.5,-103.5
       parent: 4032
-  - uid: 5199
+  - uid: 5200
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -1.5,-102.5
       parent: 4032
-  - uid: 5200
+  - uid: 5201
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -1.5,-101.5
       parent: 4032
-  - uid: 5201
+  - uid: 5202
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -1.5,-100.5
       parent: 4032
-  - uid: 5202
+  - uid: 5203
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -1.5,-99.5
       parent: 4032
-  - uid: 5203
+  - uid: 5204
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -1.5,-98.5
       parent: 4032
-  - uid: 5204
+  - uid: 5205
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -1.5,-96.5
       parent: 4032
-  - uid: 5205
+  - uid: 5206
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -1.5,-95.5
       parent: 4032
-  - uid: 5206
+  - uid: 5207
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -1.5,-94.5
       parent: 4032
-  - uid: 5207
+  - uid: 5208
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -1.5,-93.5
       parent: 4032
-  - uid: 5208
+  - uid: 5209
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -1.5,-92.5
       parent: 4032
-  - uid: 5209
+  - uid: 5210
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -1.5,-91.5
       parent: 4032
-  - uid: 5210
+  - uid: 5211
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -1.5,-90.5
       parent: 4032
-  - uid: 5211
+  - uid: 5212
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -1.5,-89.5
       parent: 4032
-  - uid: 5212
+  - uid: 5213
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -1.5,-97.5
       parent: 4032
-  - uid: 5213
+  - uid: 5214
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -1.5,-88.5
       parent: 4032
-  - uid: 5214
+  - uid: 5215
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -1.5,-87.5
       parent: 4032
-  - uid: 5215
+  - uid: 5216
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -1.5,-85.5
       parent: 4032
-  - uid: 5216
+  - uid: 5217
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -1.5,-86.5
       parent: 4032
-  - uid: 5217
+  - uid: 5218
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -1.5,-84.5
       parent: 4032
-  - uid: 5218
+  - uid: 5219
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
@@ -31198,7 +31221,7 @@ entities:
       pos: 1.5,-40.5
       parent: 4032
     - type: Door
-      secondsUntilStateChange: -1026.4918
+      secondsUntilStateChange: -1325.2444
       state: Opening
 - proto: Wrench
   entities:
