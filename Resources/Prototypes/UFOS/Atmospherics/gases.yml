@@ -1,0 +1,13 @@
+﻿- type: gas
+  id: 9
+  name: gases-raddust
+  specificHeat: 20
+  heatCapacityRatio: 1.4
+  molarMass: 44
+  # gasOverlaySprite: /Textures/Effects/atmospherics.rsi
+  # gasOverlayState: miasma
+  gasMolesVisible: 2
+  gasVisbilityFactor: 3.5
+  color: 494949
+  reagent: Ammonia
+  pricePerMole: 0.15

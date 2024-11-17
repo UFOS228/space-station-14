@@ -420,20 +420,20 @@
         cellularDistanceFunction: Euclidean
         cellularReturnType: Distance2
     # Liquid plasma rivers. Ice moon baby
-    - !type:BiomeEntityLayer
-      allowedTiles:
-      - FloorSnow
-      - FloorIce
-      threshold: 0.95
-      noise:
-        seed: 3
-        noiseType: OpenSimplex2
-        frequency: 0.003
-        lacunarity: 1.50
-        fractalType: Ridged
-        octaves: 1
-      entities:
-      - FloorLiquidPlasmaEntity
+    # - !type:BiomeEntityLayer
+    #   allowedTiles:
+    #   - FloorSnow
+    #   - FloorIce
+    #   threshold: 0.95
+    #   noise:
+    #     seed: 3
+    #     noiseType: OpenSimplex2
+    #     frequency: 0.003
+    #     lacunarity: 1.50
+    #     fractalType: Ridged
+    #     octaves: 1
+    #   entities:
+    #   - FloorLiquidPlasmaEntity
     - !type:BiomeDummyLayer
       id: Loot
     - !type:BiomeTileLayer

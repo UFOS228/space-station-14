@@ -1,3 +1,4 @@
+#Stalker
 - type: entity
   parent: SalvageHumanCorpse
   id: MobRandomStalkerCorpse
@@ -10,9 +11,11 @@
 - type: startingGear
   id: StalkerCorpseGear
   equipment:
-    shoes: ClothingShoesColorBlack
-    jumpsuit: ClothingUniformJumpsuitMercenary
-    outerClothing: ClothingOuterCoatBomber
+    shoes: ClothingShoesSwat
+    jumpsuit: ClothingUniformJumpsuitColorBlack
+    outerClothing: ClothingOuterCoatJensen
+    hat: ClothingHeadHatHoodChaplainHood
+    mask: ClothingMaskGas
 
 - type: entity
   name: Random Stalker Corpse Spawner
@@ -22,8 +25,39 @@
   components:
   - type: Sprite
     layers:
-      - state: security_officer
       - state: green
+      - state: security_officer
   - type: ConditionalSpawner
     prototypes:
       - MobRandomStalkerCorpse
+
+#Civ
+- type: entity
+  parent: SalvageHumanCorpse
+  id: MobRandomCivCorpse
+  suffix: Metro Deco
+  components:
+  - type: Loadout
+    prototypes:
+    - CivCorpseGear
+
+- type: startingGear
+  id: CivCorpseGear
+  equipment:
+    shoes: ClothingShoesColorBlack
+    jumpsuit: ClothingUniformJumpsuitMercenary
+    outerClothing: ClothingOuterCoatBomber
+
+- type: entity
+  name: Random Civ Corpse Spawner
+  id: RandomCivCorpseSpawner
+  suffix: Metro Deco
+  parent: SalvageHumanCorpseSpawner
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - state: passenger
+  - type: ConditionalSpawner
+    prototypes:
+      - MobRandomCivCorpse
